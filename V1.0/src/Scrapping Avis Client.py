@@ -1,7 +1,7 @@
 """
 Scraper Amazon pour récupérer les avis de la montre connectée
 Produit : Montre Connectée Smartwatch Bluetooth
-Version corrigée avec gestion des erreurs et URL fixes
+Version corrigée avec URLs exactes Amazon
 """
 
 import requests
@@ -45,10 +45,18 @@ class AmazonReviewScraper:
             return match.group(1)
         return None
     
-    def get_review_url(self, product_id, page_num=1):
-        """Construit l'URL de la page des avis - VERSION CORRIGÉE"""
-        # Format correct pour Amazon.fr
-        return f"https://www.amazon.fr/product-reviews/{product_id}/?pageNumber={page_num}&sortBy=recent"
+    def get_review_url(self, product_id, page_num=1, star_filter="all_reviews"):
+        """Construit l'URL de la page des avis - FORMAT AMAZON EXACT"""
+        if page_num == 1:
+            if star_filter == "all_reviews":
+                return f"https://www.amazon.fr/product-reviews/{product_id}/ref=cm_cr_unknown?ie=UTF8&reviewerType=all_reviews&pageNumber=1#reviews-filter-bar"
+            else:
+                return f"https://www.amazon.fr/product-reviews/{product_id}/ref=cm_cr_unknown?ie=UTF8&filterByStar={star_filter}&reviewerType=all_reviews&pageNumber=1#reviews-filter-bar"
+        else:
+            if star_filter == "all_reviews":
+                return f"https://www.amazon.fr/product-reviews/{product_id}/ref=cm_cr_getr_d_paging_btm_next_{page_num}?ie=UTF8&reviewerType=all_reviews&pageNumber={page_num}#reviews-filter-bar"
+            else:
+                return f"https://www.amazon.fr/product-reviews/{product_id}/ref=cm_cr_getr_d_paging_btm_next_{page_num}?ie=UTF8&filterByStar={star_filter}&reviewerType=all_reviews&pageNumber={page_num}#reviews-filter-bar"
     
     def parse_rating(self, rating_text):
         """Extrait la note depuis le texte"""
@@ -86,17 +94,7 @@ class AmazonReviewScraper:
             
             if response.status_code != 200:
                 print(f"Erreur: Status code {response.status_code}")
-                
-                # Tentative avec URL alternative
-                if "pageNumber" in url:
-                    alt_url = url.replace("pageNumber", "pageNum")
-                    print(f"Tentative avec URL alternative: {alt_url}")
-                    response = self.session.get(alt_url, headers=self.headers, timeout=15)
-                    
-                    if response.status_code != 200:
-                        return False
-                else:
-                    return False
+                return False
             
             soup = BeautifulSoup(response.content, 'html.parser')
             
@@ -184,8 +182,8 @@ class AmazonReviewScraper:
             print(f"Erreur lors du scraping: {e}")
             return False
     
-    def scrape_all_reviews(self, product_url, max_pages=10):
-        """Scrape tous les avis disponibles"""
+    def scrape_all_reviews(self, product_url, max_pages=10, star_filters=None):
+        """Scrape tous les avis disponibles avec filtres par étoiles"""
         # Créer les dossiers nécessaires
         self.create_directories()
         
@@ -197,6 +195,10 @@ class AmazonReviewScraper:
         
         print(f"ID du produit (ASIN): {product_id}")
         
+        # Filtres par défaut : tous les avis puis par étoiles
+        if star_filters is None:
+            star_filters = ["all_reviews"]
+        
         # Test de l'URL principale d'abord
         base_review_url = f"https://www.amazon.fr/product-reviews/{product_id}/"
         print(f"\n🔗 Test d'accessibilité de l'URL: {base_review_url}")
@@ -207,23 +209,28 @@ class AmazonReviewScraper:
         
         print("Début du scraping...")
         
-        for page_num in range(1, max_pages + 1):
-            print(f"\n--- Page {page_num} ---")
-            review_url = self.get_review_url(product_id, page_num)
+        for star_filter in star_filters:
+            print(f"\n🌟 Scraping des avis: {star_filter}")
             
-            success = self.scrape_page(review_url)
+            for page_num in range(1, max_pages + 1):
+                print(f"\n--- {star_filter} - Page {page_num} ---")
+                review_url = self.get_review_url(product_id, page_num, star_filter)
+                
+                success = self.scrape_page(review_url)
+                
+                if not success:
+                    print(f"Arrêt du scraping pour {star_filter} à la page {page_num}")
+                    break
+                
+                print(f"Total d'avis récupérés: {len(self.reviews)}")
+                
+                # Pause plus longue entre les filtres
+                if page_num < max_pages:
+                    time.sleep(random.uniform(3, 7))
             
-            if not success:
-                print(f"Arrêt du scraping à la page {page_num}")
-                if page_num == 1:
-                    print("Aucun avis récupéré - Amazon peut bloquer les requêtes automatisées")
-                break
-            
-            print(f"Total d'avis récupérés: {len(self.reviews)}")
-            
-            # Arrêt si pas d'avis sur cette page
-            if len(self.reviews) == 0:
-                break
+            # Pause entre les filtres d'étoiles
+            if len(star_filters) > 1:
+                time.sleep(random.uniform(5, 10))
         
         return self.reviews
     
@@ -252,15 +259,29 @@ def main():
     # Créer le scraper
     scraper = AmazonReviewScraper()
     
-    # Option 1: Scraper directement
     print("🚀 Tentative de scraping automatique...")
-    reviews = scraper.scrape_all_reviews(product_url, max_pages=5)
+    print("Mode automatique: Test rapide...")
+    
+    # Test avec juste les 5 étoiles, 2 pages
+    reviews = scraper.scrape_all_reviews(
+        product_url, 
+        max_pages=2, 
+        star_filters=["five_star"]  # Test avec 5 étoiles seulement
+    )
     
     if reviews and len(reviews) > 0:
         df = scraper.save_to_csv()
         print("\n📊 Aperçu des données:")
         if df is not None and not df.empty:
             print(df[['note', 'titre', 'achat_verifie']].head())
+        
+        # Si le test fonctionne, proposer le scraping complet
+        print(f"\n✅ Test réussi! {len(reviews)} avis récupérés.")
+        print("Le scraping fonctionne. Vous pouvez maintenant:")
+        print("• Modifier star_filters dans le code pour scraper toutes les étoiles")
+        print("• Augmenter max_pages pour plus de pages")
+        print("• Exemple: star_filters=['all_reviews'] ou ['five_star', 'one_star']")
+        
     else:
         print("\n⚠️ Le scraping automatique a échoué.")
         print("Passons au Plan B...")
