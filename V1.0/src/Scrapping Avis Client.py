@@ -523,7 +523,9 @@ def scraping_personnalise():
         
         return df
     else:
-        print("❌ Échec du scraping")
+        print("❌ Échec du scraping automatique")
+        print("🔄 Passage au Plan B automatique...")
+        plan_b(scraper)
         return None
 
 if __name__ == "__main__":

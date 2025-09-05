@@ -1,0 +1,4 @@
+﻿note,titre,texte,date,achat_verifie,auteur
+5.0,Exemple: Super montre!,Exemple de texte positif...,1 janvier 2025,True,Client1
+1.0,Exemple: Déçu,Exemple de texte négatif...,2 janvier 2025,True,Client2
+3.0,Exemple: Correct,Exemple de texte neutre...,3 janvier 2025,False,Client3
