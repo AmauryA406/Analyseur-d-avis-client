@@ -1,0 +1,712 @@
+[
+  {
+    "id": 1,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Jolie et fonctionnelle",
+    "texte": "Excellent jolie montre féminine fonctionnelle",
+    "date": "Commenté en France le 31 juillet 2025",
+    "auteur": "WISSBERG",
+    "achat_verifie": true
+  },
+  {
+    "id": 2,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles EXELLENT PRODUIT RAPORT QUALITE PRIX",
+    "texte": "SUPER PRODUIT PAR CONTRE ELLE A UN GRAND FORMAT PLUTOT POU R HOMME. JE L UTILISE QUAND MEME ET J EN COMMANDE UNE PLUS PETITE",
+    "date": "Commenté en France le 30 août 2025",
+    "auteur": "MARECHAL",
+    "achat_verifie": true
+  },
+  {
+    "id": 3,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Bien",
+    "texte": "Fiable, bonne batterie, fluide, moderne, beaucoup de fonctionnalités, plusieurs choix de fond d’écran (pas assez de neutre/simple), confortable, mais plastique rose qui se teint un peu",
+    "date": "Commenté en France le 26 août 2025",
+    "auteur": "Clo G",
+    "achat_verifie": true
+  },
+  {
+    "id": 4,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Quelle marche",
+    "texte": "Bien reçu différente de l'autre montre connectée elle avait durer 2ans ont verra pour celle la",
+    "date": "Commenté en France le 4 août 2025",
+    "auteur": "tevar mireille",
+    "achat_verifie": true
+  },
+  {
+    "id": 5,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles La finition.",
+    "texte": "Montre pratique et étonné par sa qualité. Bon produit.",
+    "date": "Commenté en France le 31 juillet 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 6,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Bracelet donne des allergies",
+    "texte": "Bonne montre, facile à utiliser. Parcontre allergies au bracelet.",
+    "date": "Commenté en France le 16 juillet 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 7,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Son image",
+    "texte": "Elle est bien",
+    "date": "Commenté en France le 3 juillet 2025",
+    "auteur": "sisi",
+    "achat_verifie": true
+  },
+  {
+    "id": 8,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre complète",
+    "texte": "Cette montre est complète, le prix est raisonnable ! Cependant, je ne reçois pas les sms alors que messenger, snap,... aucun soucis.",
+    "date": "Commenté en France le 17 juin 2025",
+    "auteur": "Véro19",
+    "achat_verifie": true
+  },
+  {
+    "id": 9,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre fonctionnelle fait l’affaire",
+    "texte": "Belle montre fonctionnelle",
+    "date": "Commenté en France le 25 juin 2025",
+    "auteur": "M RAfi",
+    "achat_verifie": true
+  },
+  {
+    "id": 10,
+    "page": 1,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Problème de notification",
+    "texte": "Super montre pour le prix .Par contre je ne reçois plus les noms des personnes qui m'envoie un Snap . Si quelqu'un peut m'aider .Merci",
+    "date": "Commenté en France le 5 juin 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 11,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles MONTRE CONNECTEE",
+    "texte": "Très belle montre, mais je dirai que le calcul du nombre de pas ne se fait pas correctement",
+    "date": "Commenté en France le 2 juin 2025",
+    "auteur": "BONFAND ALEXANDRA",
+    "achat_verifie": true
+  },
+  {
+    "id": 12,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Très bon rapport qualité prix",
+    "texte": "Très bonne montre elle est très complet pour 20€ ça vaut le coût.Elle calcul très bien les pas, on peu également calculer le poulet, pression arteriels ect..Il y a aura une calculatrice, réveil, minuteur, chrono ect..On peu appeler et recevoir des appels et des notifications des applications choisis à condition d'être connecté en Bluetooth, persil je l'active quand je suis dehors. Il a pas mal d'autres options je recommande et j'en est même acheter une autre pour l'offrir",
+    "date": "Commenté en France le 19 mars 2025",
+    "auteur": "Ainahs",
+    "achat_verifie": true
+  },
+  {
+    "id": 13,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Très bon achat",
+    "texte": "Je suis contente de mon achat",
+    "date": "Commenté en France le 22 mai 2025",
+    "auteur": "Carine sautraud",
+    "achat_verifie": true
+  },
+  {
+    "id": 14,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Bonne petite montre",
+    "texte": "Bonne montre , bon rapport qualité/ prix",
+    "date": "Commenté en France le 17 mai 2025",
+    "auteur": "Très bien et livraison rapide",
+    "achat_verifie": true
+  },
+  {
+    "id": 15,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles bon rapport qualité prix",
+    "texte": "elle est pas mal sauf que je ne recois pas les textos de certaines personnes bizarre sinon elle fonctionne comme prévu pour les appelles",
+    "date": "Commenté en France le 23 avril 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 16,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Google fit",
+    "texte": "Pour le prix -20€ elle est jolie et pratique.Par contre je n'ai pas réussi à l'associer à mon compte Google fit.De plus en voulant commencer un \"exercice\" marche extérieur ça m'a compté les pas doublement et impossible de supprimer cette activité.",
+    "date": "Commenté en France le 30 mars 2025",
+    "auteur": "Madeleen",
+    "achat_verifie": true
+  },
+  {
+    "id": 17,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre",
+    "texte": "Belle montre,franchement j'adore,surtout que le prix est intéressant",
+    "date": "Commenté en France le 6 mai 2025",
+    "auteur": "Asmous",
+    "achat_verifie": true
+  },
+  {
+    "id": 18,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre au top !",
+    "texte": "Pour le prix cette montre est tout à fait correcte.À voir avec le temps mais en attendant elle fait le job autant que celles plus chères, voir encore mieux.",
+    "date": "Commenté en France le 31 mars 2025",
+    "auteur": "Anna",
+    "achat_verifie": true
+  },
+  {
+    "id": 19,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Beaucoup de fonctions pour un petit prix",
+    "texte": "Pour l’instant rien à redire! Facile à installer, beaucoup de fonctionnalités , je l’ai acheté pour ma mère qui souhaite surtout la fonction santé . Mais la fonction appel est ok. Petit bémol , le bracelet est peut être un peu fragile , à voir avec le temps mais ne soyons pas trop exigeants vu le tout petit prix !",
+    "date": "Commenté en France le 27 février 2025",
+    "auteur": "sofiedelyon",
+    "achat_verifie": true
+  },
+  {
+    "id": 20,
+    "page": 2,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre connectée",
+    "texte": "Pratique",
+    "date": "Commenté en France le 5 mai 2025",
+    "auteur": "Mimi",
+    "achat_verifie": true
+  },
+  {
+    "id": 21,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Bon rapport qualité prix",
+    "texte": "Bon produit",
+    "date": "Commenté en France le 3 mai 2025",
+    "auteur": "Fabino",
+    "achat_verifie": true
+  },
+  {
+    "id": 22,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Belle montre",
+    "texte": "Belle montre Mon fils en est contant seul hic je n'arrive pas à mettre les notifications pourtant les appels fonctionne.",
+    "date": "Commenté en France le 23 janvier 2025",
+    "auteur": "BURGHGRAEVE ludivine",
+    "achat_verifie": true
+  },
+  {
+    "id": 23,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre",
+    "texte": "Offerte à Noël, les 2 personnes en sont satisfaite. Facile à utiliser et à priori bon produit. A voir dans le temps",
+    "date": "Commenté en France le 9 janvier 2025",
+    "auteur": "Aurélie Du Mas d'Azil09",
+    "achat_verifie": true
+  },
+  {
+    "id": 24,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Bien",
+    "texte": "Très belle montre pas encore essayé c'est un cadeau donc j'espère que ça ira",
+    "date": "Commenté en France le 22 décembre 2024",
+    "auteur": "Prunelle",
+    "achat_verifie": true
+  },
+  {
+    "id": 25,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Comment installer le bracelet ?",
+    "texte": "Je ne sais pas comment installer le bracelet il n’y a pas d’emplacement sur la montre",
+    "date": "Commenté en France le 2 décembre 2024",
+    "auteur": "ravaud véronique",
+    "achat_verifie": true
+  },
+  {
+    "id": 26,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Globalement satisfaisante mais quelques points faibles",
+    "texte": "Cette montre est plutôt pratique, efficace quand elle est connectée, et l'application est claire, rien à redire de ce côté. Mais :- Batterie qui tient peu lorsque la connexion Bluetooth est activée. Sans compter qu'une connexion continue en Bluetooth décharge aussi le téléphone.- elle n'est pas particulièrement intuitive. J'ai enfin trouvé comment activer un réveil, je cherche depuis plus de deux mois...- surtout, on ne peut pas changer la sonnerie (appels et réveil) ni le volume. C'est sympa d'avoir la possibilité de changer le fond d'écran mais je trouverais mieux de pouvoir changer la tonalité, que je trouve un peu agressive. Pareil, j'ai trouvé hier un paramètre pour régler les vibrations, je n'ai pas encore eu le temps de tester si cela fonctionne, mais ça ne concerne pas le réveil.Si quelqu'un a réussi des modifications là-dessus (au moins le volume) je suis preneuse !Mon commentaire paraît négatif mais j'ai quand même mis quatre étoiles car il y a beaucoup de points forts ! Le rapport qualité-prix est au rendez-vous, la montre est esthétique, pratique, pas trop petite ni trop grosse, fait bien la comptabilité sport et santé (elle compte aussi le sommeil en journée, ce que je n'ai eu sur aucune de mes montres connectées jusqu'ici) !En conclusion, à part le souci de la sonnerie, je suis satisfaite de mon achat !",
+    "date": "Commenté en France le 25 janvier 2025",
+    "auteur": "Saskia G",
+    "achat_verifie": false
+  },
+  {
+    "id": 27,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Montre connectée",
+    "texte": "Produit conforme et livré en temps et en heurePlus qu'à le tester 😁",
+    "date": "Commenté en France le 3 janvier 2025",
+    "auteur": "alice quéruel",
+    "achat_verifie": false
+  },
+  {
+    "id": 28,
+    "page": 3,
+    "note": 4,
+    "titre": "4,0 sur 5 étoiles Bonne montre pour le prix",
+    "texte": "Vraiment top la batterie tiens bien on peut changer le fond d'écran avec l'application de votre téléphone.Et pleins d'autre chose les pas .....",
+    "date": "Commenté en France le 18 avril 2025",
+    "auteur": "jessica martinez",
+    "achat_verifie": true
+  },
+  {
+    "id": 29,
+    "page": 3,
+    "note": 4,
+    "titre": "Watch",
+    "texte": "Grandson likes it.",
+    "date": "Commenté au Royaume-Uni le 13 février 2025",
+    "auteur": "Leslie Bell",
+    "achat_verifie": true
+  },
+  {
+    "id": 30,
+    "page": 3,
+    "note": 4,
+    "titre": "Straps can make you sweaty",
+    "texte": "Great watch for work",
+    "date": "Commenté en Irlande le 10 juillet 2025",
+    "auteur": "Amazon Customer",
+    "achat_verifie": true
+  },
+  {
+    "id": 31,
+    "page": 4,
+    "note": 4,
+    "titre": "Good watch",
+    "texte": "Thas a good watch but I cant set the time according to any orher countries time zone. And ıt would have been alot better if there was an alarm. Thank you",
+    "date": "Commenté en Belgique le 17 mai 2025",
+    "auteur": "Tülay Yalçın Van Damme",
+    "achat_verifie": true
+  },
+  {
+    "id": 32,
+    "page": 4,
+    "note": 4,
+    "titre": "Vrij tevreden",
+    "texte": "Voor deze prijs een goede koop. Alleen jammer dat hij niet volledig synchroniseert met de Samsung health app. Ik mis dus het stukje voeding / koolhydraten invoer. En de app die bij dit device hoort is alleen in het Engels",
+    "date": "Commenté aux Pays-Bas le 30 mai 2025",
+    "auteur": "Joy-Alice van der Pool",
+    "achat_verifie": true
+  },
+  {
+    "id": 33,
+    "page": 4,
+    "note": 4,
+    "titre": "Sehr gutes Preis/Leistung Akku hält lange.",
+    "texte": "Sehr gutes Preis/Leistung Akku hält lange.",
+    "date": "Commenté en Allemagne le 1 août 2025",
+    "auteur": "seniorrath",
+    "achat_verifie": true
+  },
+  {
+    "id": 34,
+    "page": 4,
+    "note": 4,
+    "titre": "Qualità e prezzo super",
+    "texte": "Buon prodotto,ttimo prezzo!",
+    "date": "Commenté en Italie le 20 août 2025",
+    "auteur": "dome",
+    "achat_verifie": true
+  },
+  {
+    "id": 35,
+    "page": 4,
+    "note": 4,
+    "titre": "Adaptable",
+    "texte": "Muy bien",
+    "date": "Commenté en Espagne le 14 août 2025",
+    "auteur": "Fátima",
+    "achat_verifie": true
+  },
+  {
+    "id": 36,
+    "page": 4,
+    "note": 4,
+    "titre": "Five day autonomy is great!",
+    "texte": "Compared to my (allegedly 5 year old) “real” smartwatch, this one ( more a fitness tracker with a light iWatch skin) just keeps on going and going. So far I haven’t missed functionality of the other one. So, great buy! (although even better ones seem to be available on the net)",
+    "date": "Commenté en Belgique le 21 avril 2025",
+    "auteur": "Amazon Customer",
+    "achat_verifie": true
+  },
+  {
+    "id": 37,
+    "page": 4,
+    "note": 4,
+    "titre": "Buono",
+    "texte": "Leggero nonostante le dimensioni importantiBatteria che dura molto.Qualche problemino ad installare l'app, poi risolto.Un po' \"generoso\" nel contapassi: me ne conta decisamente più di quelli che faccio.Nel complesso un buon orologio, soprattutto visto il basso prezzo",
+    "date": "Commenté en Italie le 20 août 2025",
+    "auteur": "milo t.",
+    "achat_verifie": true
+  },
+  {
+    "id": 38,
+    "page": 4,
+    "note": 4,
+    "titre": "So smart",
+    "texte": "Bella e facile da utilizzare",
+    "date": "Commenté en Italie le 30 août 2025",
+    "auteur": "Rawi",
+    "achat_verifie": true
+  },
+  {
+    "id": 39,
+    "page": 4,
+    "note": 4,
+    "titre": "Smartwatch bello e utile",
+    "texte": "Ottimo articolo per sportivi o appassionati di yogging",
+    "date": "Commenté en Italie le 8 août 2025",
+    "auteur": "ROSINO",
+    "achat_verifie": true
+  },
+  {
+    "id": 40,
+    "page": 4,
+    "note": 4,
+    "titre": "SMARTWATCH FANTASTICO",
+    "texte": "Ottimo prodotto per qualità prezzo .",
+    "date": "Commenté en Italie le 24 juillet 2025",
+    "auteur": "gaspare",
+    "achat_verifie": true
+  },
+  {
+    "id": 41,
+    "page": 5,
+    "note": 4,
+    "titre": "Buon prodotto.",
+    "texte": "Articolo buono ma non è così semplice farlo collegare allo smartphone come fanno vedere.",
+    "date": "Commenté en Italie le 7 juillet 2025",
+    "auteur": "marco ansel",
+    "achat_verifie": true
+  },
+  {
+    "id": 42,
+    "page": 5,
+    "note": 4,
+    "titre": "Orologio smart molto intuitivo",
+    "texte": "Ho comprato questo orologio per mia moglie lo usa per le sue corsette e camminate, devo dire che si trova benissimo, ottimo rapporto qualità prezzo.",
+    "date": "Commenté en Italie le 16 juin 2025",
+    "auteur": "Cliente Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 43,
+    "page": 5,
+    "note": 4,
+    "titre": "sia ottimo che no, perche?",
+    "texte": "Molto bello l’unica cosa e che se lo collegi al telefono dopo almeno 12 minuti si stacca e devi ricaricarlo, molto scomodo per me che lo porto a scuola, e non si possono usare telefoni🥲🫠tutto il resto e favoloso e Siri funziona",
+    "date": "Commenté en Italie le 12 avril 2025",
+    "auteur": "Cliente Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 44,
+    "page": 5,
+    "note": 4,
+    "titre": "Medio",
+    "texte": "Buono .. ottimo qualità prezzo",
+    "date": "Commenté en Italie le 26 mai 2025",
+    "auteur": "Nancy",
+    "achat_verifie": true
+  },
+  {
+    "id": 45,
+    "page": 5,
+    "note": 4,
+    "titre": "Mamy",
+    "texte": "Bien reçuMerci",
+    "date": "Commenté en Belgique le 1 août 2025",
+    "auteur": "Rosa Tuttobene",
+    "achat_verifie": true
+  },
+  {
+    "id": 46,
+    "page": 5,
+    "note": 4,
+    "titre": "Big",
+    "texte": "It’s very big shape , this is good for men not for women",
+    "date": "Commenté en Italie le 11 mai 2025",
+    "auteur": "Noor el khalili",
+    "achat_verifie": true
+  },
+  {
+    "id": 47,
+    "page": 5,
+    "note": 4,
+    "titre": "Interesante",
+    "texte": "Por el precio hace perfecto su función, la batería dura si no lo cargas de notificación, llamadas etc…",
+    "date": "Commenté en Espagne le 30 mai 2025",
+    "auteur": "Ismael serrano",
+    "achat_verifie": true
+  },
+  {
+    "id": 48,
+    "page": 5,
+    "note": 4,
+    "titre": "Fa il suo lavoro",
+    "texte": "Fa il suo lavoro",
+    "date": "Commenté en Italie le 13 mai 2025",
+    "auteur": "Scarlett",
+    "achat_verifie": true
+  },
+  {
+    "id": 49,
+    "page": 5,
+    "note": 4,
+    "titre": "scarso",
+    "texte": "nello orologiononci sono tutte le schermate principali del quadrante dove viene indicata la ora come riportato sul sito di amazzon nella ubblicita praticamente si puo scegliere tra 5 o 6 configurazioni solamente ed i muneri del quadrante rimangono sempre piccoli e poco leggibili per chi ha problemi di vista non lo consiglio affatto spendete 10 euro in piu pero a distanza di mesi devo ammettere che e molto preciso e su 4 mesi non e stato mai cambiata la ora malgrada non uso il blu tout",
+    "date": "Commenté en Italie le 16 décembre 2024",
+    "auteur": "alvaro",
+    "achat_verifie": true
+  },
+  {
+    "id": 50,
+    "page": 5,
+    "note": 4,
+    "titre": "Pulsera un poco corta",
+    "texte": "La pulsera yo la pondría un poco más larga porque es corta,por lo demás está todo bien",
+    "date": "Commenté en Espagne le 19 avril 2025",
+    "auteur": "Tamara García valle",
+    "achat_verifie": true
+  },
+  {
+    "id": 51,
+    "page": 6,
+    "note": 4,
+    "titre": "Buono",
+    "texte": "Un ottimo prodotto!!❤️",
+    "date": "Commenté en Italie le 4 avril 2025",
+    "auteur": "Marco Coraggi",
+    "achat_verifie": true
+  },
+  {
+    "id": 52,
+    "page": 6,
+    "note": 4,
+    "titre": "Non è arrivato",
+    "texte": "E piccolo",
+    "date": "Commenté en Italie le 29 mars 2025",
+    "auteur": "Ruben Cesar aguirre Falcon",
+    "achat_verifie": true
+  },
+  {
+    "id": 53,
+    "page": 6,
+    "note": 4,
+    "titre": "Qualità e bellezza",
+    "texte": "È stato un regalo davvero azzeccato",
+    "date": "Commenté en Italie le 21 mars 2025",
+    "auteur": "Milan",
+    "achat_verifie": true
+  },
+  {
+    "id": 54,
+    "page": 6,
+    "note": 4,
+    "titre": "Bien calidad-precio",
+    "texte": "La pantalla está muy bien, se ve perfecto, para lo que ha costado hace su función de ver los WhatsApp sin sacar el móvil. Lo tengo 2 días, me falta probar muchas cosas, pero de momento bien. A veces no desliza bien y le cuesta cambiar de pantalla o de menú. Por lo general bien.",
+    "date": "Commenté en Espagne le 22 janvier 2025",
+    "auteur": "Se ajusta perfectamente y la sensibilidad es excelente.",
+    "achat_verifie": true
+  },
+  {
+    "id": 55,
+    "page": 6,
+    "note": 4,
+    "titre": "Bello",
+    "texte": "Bello e a buon prezzo.",
+    "date": "Commenté en Italie le 6 mars 2025",
+    "auteur": "Patrizia",
+    "achat_verifie": true
+  },
+  {
+    "id": 56,
+    "page": 6,
+    "note": 4,
+    "titre": "Buon prodotto",
+    "texte": "Buono per il prezzo e ottimo. Per le funzioni",
+    "date": "Commenté en Italie le 20 février 2025",
+    "auteur": "gian luca de bonis",
+    "achat_verifie": true
+  },
+  {
+    "id": 57,
+    "page": 6,
+    "note": 4,
+    "titre": "Buena compra",
+    "texte": "Está muy bien, lo compre para mi ama, igual para ella un poco complicado, pero muy completo",
+    "date": "Commenté en Espagne le 4 mars 2025",
+    "auteur": "Cruz",
+    "achat_verifie": true
+  },
+  {
+    "id": 58,
+    "page": 6,
+    "note": 4,
+    "titre": "Mi hanno contattato per il rimborso",
+    "texte": "Dopo la prima ricarica e stato impossibile ricaricalo ..aggiungo mi hanno contattato scusandosi e mi faranno un buono rimborso",
+    "date": "Commenté en Italie le 2 février 2025",
+    "auteur": "Silvia😁",
+    "achat_verifie": true
+  },
+  {
+    "id": 59,
+    "page": 6,
+    "note": 4,
+    "titre": "Difficile da istallare",
+    "texte": "Buono",
+    "date": "Commenté en Italie le 3 mars 2025",
+    "auteur": "Martina pieraccioli",
+    "achat_verifie": true
+  },
+  {
+    "id": 60,
+    "page": 6,
+    "note": 4,
+    "titre": "Carino",
+    "texte": "Ho pagato poco e buon funzionamento",
+    "date": "Commenté en Italie le 17 février 2025",
+    "auteur": "Lourdez Diaz",
+    "achat_verifie": true
+  },
+  {
+    "id": 61,
+    "page": 7,
+    "note": 4,
+    "titre": "Es justo",
+    "texte": "Esperaba más de él. Pero se ajusta al precio",
+    "date": "Commenté en Espagne le 7 mars 2025",
+    "auteur": "Cliente Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 62,
+    "page": 7,
+    "note": 4,
+    "titre": "Reloj",
+    "texte": "El único problema es con el WhatsApp para emparejarlo que cuesta",
+    "date": "Commenté en Espagne le 27 février 2025",
+    "auteur": "jose francisco ramos castellano",
+    "achat_verifie": true
+  },
+  {
+    "id": 63,
+    "page": 7,
+    "note": 4,
+    "titre": "Cumple perfecto",
+    "texte": "Buena relación calidad precio, fácil de enlazar y muy correcto para el precio",
+    "date": "Commenté en Espagne le 24 février 2025",
+    "auteur": "Silvia fernandez",
+    "achat_verifie": true
+  },
+  {
+    "id": 64,
+    "page": 7,
+    "note": 4,
+    "titre": "bien",
+    "texte": "bien",
+    "date": "Commenté en Espagne le 26 mars 2025",
+    "auteur": "mihai lukacs",
+    "achat_verifie": true
+  },
+  {
+    "id": 65,
+    "page": 7,
+    "note": 4,
+    "titre": "Buono",
+    "texte": "Buono",
+    "date": "Commenté en Italie le 29 janvier 2025",
+    "auteur": "Isa",
+    "achat_verifie": true
+  },
+  {
+    "id": 66,
+    "page": 7,
+    "note": 4,
+    "titre": "O esperado",
+    "texte": "Dentro do esperado",
+    "date": "Commenté en Espagne le 26 février 2025",
+    "auteur": "Vvilhena",
+    "achat_verifie": true
+  },
+  {
+    "id": 67,
+    "page": 7,
+    "note": 4,
+    "titre": "Cadeau",
+    "texte": "C'était un cadeau la personne en est heureuse",
+    "date": "Commenté en Belgique le 25 avril 2025",
+    "auteur": "Katy",
+    "achat_verifie": true
+  },
+  {
+    "id": 68,
+    "page": 7,
+    "note": 4,
+    "titre": "Reloj",
+    "texte": "Práctico y cumple con sus funciones lo único q no cumple es q no puedo editar fotos.",
+    "date": "Commenté en Espagne le 19 janvier 2025",
+    "auteur": "Manuela vizcaino gonzalez",
+    "achat_verifie": true
+  },
+  {
+    "id": 69,
+    "page": 7,
+    "note": 4,
+    "titre": "facile à utiliser",
+    "texte": "jolie",
+    "date": "Commenté en Belgique le 17 février 2025",
+    "auteur": "Ariola",
+    "achat_verifie": true
+  },
+  {
+    "id": 70,
+    "page": 7,
+    "note": 4,
+    "titre": "OK as cheap watch...",
+    "texte": "Need some time to understand the functions, but ok.",
+    "date": "Commenté en Belgique le 2 janvier 2025",
+    "auteur": "Tiete Jo",
+    "achat_verifie": true
+  },
+  {
+    "id": 71,
+    "page": 8,
+    "note": 4,
+    "titre": "Basic Smartwatch at Reasonable Price",
+    "texte": "This attractive smartwatch is a nice compromise between a small and large screen size. It has the features that you need.Pros:- economical and power saving LCD display.- attractive gold color.- will accept any 22 mm standard watch band.- reasonable battery life.- easy to navigate the accompanying Gloryfit phone app.- nice array of popular built-in apps including a calculator.- includes a second watch band that is a beautiful mesh stainless steel.Cons:- mediocre screen resolution but still very readable.Recommended if you are not too picky about the display quality.",
+    "date": "Commenté aux États-Unis le 23 septembre 2024",
+    "auteur": "Dham2",
+    "achat_verifie": false
+  }
+]

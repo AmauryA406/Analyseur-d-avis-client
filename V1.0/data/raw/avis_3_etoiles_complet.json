@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Pas de SMS !",
+    "texte": "{\"clickstreamNexusMetricsConfig\":{\"actionType\":\"DISCOVERY\",\"producerId\":\"vsemetrics_playercards\",\"eventType\":\"IVEVideoView\",\"productId\":\"\",\"eventOwner\":\"vsemetrics_playercards\",\"schemaId\":\"clickstream.CustomerEvent.4\"},\"clientPrefix\":\"vse_reviews_desktop_r2tvb3134n8wy7_1757075179999\",\"ccvDisclosure\":\"\",\"closedCaptionsConfig\":{\"captionsOnTexts\":{\"fr\":\"Français (automatique)\",\"en\":\"Anglais (automatique)\"},\"captionsOffText\":\"Sous-titres désactivés\",\"languageToLabelTexts\":{\"English\":\"Anglais\"}},\"sushiMetricsConfig\":{\"isRobot\":false,\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"sessionId\":\"259-5048849-8046858\",\"refMarkers\":\"vse_reviews_desktop_R2TVB3134N8WY7_1757075179999_ref\",\"placementContext\":\"cr_inline_review\",\"marketplaceId\":\"A13V1IB3VIYZZH\",\"isInternal\":false,\"endpoint\":\"https://unagi-eu.amazon.com/1/events/com.amazon.eel.vse.metrics.prod.events.test\",\"requestId\":\"VVJJFTA235G0M375WAW5\",\"customerId\":\"A240RR6P6CSJYM\",\"sessionType\":1},\"mimeType\":\"application/x-mpegURL\",\"reportUrl\":\"\",\"nexusMetricsConfig\":{\"isInternal\":false,\"widgetMetricsSchemaId\":\"vse.VSECardsEvents.9\",\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"videoAsin\":\"R2TVB3134N8WY7\",\"customerId\":\"A240RR6P6CSJYM\",\"producerId\":\"vsemetrics_playercards\",\"refMarkers\":\"vse_reviews_desktop_R2TVB3134N8WY7_1757075179999_ref\",\"placementContext\":\"cr_inline_review\",\"playerTSMMetricsSchemaId\":\"vse.VSECardsPlayerEvents.9\"},\"videoHeight\":0,\"videoWidth\":0,\"initialClosedCaptions\":\"fr,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-eu-west-1-prod/closedCaptions/9a1d3d53-5a12-4753-a62f-b62822b6ae98.vtt\",\"videoUrl\":\"https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-eu-west-1-prod/55deb766-292e-4c3e-88bd-b9ca8c8919c6/default.vertical.jobtemplate.hls.m3u8\",\"metricsEmissionMethod\":\"nexus\",\"imageUrl\":\"https://m.media-amazon.com/images/I/71nlD0H2dIL._SY256._SY256.jpg\",\"awaConfig\":{\"useUpNextComponent\":false,\"clickstreamNexusMetricsConfig\":{\"actionType\":\"DISCOVERY\",\"producerId\":\"vsemetrics_playercards\",\"eventType\":\"IVEVideoView\",\"productId\":\"\",\"eventOwner\":\"vsemetrics_playercards\",\"schemaId\":\"clickstream.CustomerEvent.4\"},\"initialVideo\":\"R2TVB3134N8WY7\",\"shouldPreload\":true,\"enableClickBasedAttribution\":false,\"isChromelessPlayer\":false,\"closedCaptionsConfig\":{\"captionsOnTexts\":{\"fr\":\"Français (automatique)\",\"en\":\"Anglais (automatique)\"},\"captionsOffText\":\"Sous-titres désactivés\",\"languageToLabelTexts\":{\"English\":\"Anglais\"}},\"enableDynamicBlur\":false,\"showPlayerPlayButton\":false,\"isVideoImmersivePlayer\":false,\"metricsEmissionMethod\":\"nexus\",\"skipInitialFocus\":false,\"playerSkin\":\"none\",\"disabledViewIds\":[\"replayHint\"],\"includeEarnsComissionDisclosure\":false,\"customerId\":\"A240RR6P6CSJYM\",\"containerId\":\"vse_reviews_desktop_r2tvb3134n8wy7_1757075179999-player-d5bf8804-7d5a-4a47-935f-1477b63e4d64\",\"allowCrossOrigin\":false,\"requestMetadata\":{\"marketplaceId\":\"A13V1IB3VIYZZH\",\"clientId\":\"VSE-FR\",\"sessionId\":\"259-5048849-8046858\",\"method\":\"cr_inline_review\",\"requestId\":\"VVJJFTA235G0M375WAW5\",\"pageAsin\":\"\"},\"shouldLoop\":false,\"shouldDisableControls\":false,\"alwaysSetInitialVideo\":true,\"showPlayerCloseButton\":false,\"clientPrefix\":\"\",\"useAutoplayFallback\":false,\"sushiMetricsConfig\":{\"isRobot\":false,\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"sessionId\":\"259-5048849-8046858\",\"refMarkers\":\"vse_reviews_desktop_R2TVB3134N8WY7_1757075179999_ref\",\"placementContext\":\"cr_inline_review\",\"marketplaceId\":\"A13V1IB3VIYZZH\",\"isInternal\":false,\"endpoint\":\"https://unagi-eu.amazon.com/1/events/com.amazon.eel.vse.metrics.prod.events.test\",\"requestId\":\"VVJJFTA235G0M375WAW5\",\"customerId\":\"A240RR6P6CSJYM\",\"sessionType\":1},\"ospLinkCode\":\"\",\"showPosterImage\":true,\"languageCode\":\"fr\",\"languageLocalization\":{\"play\":\"Jouez\",\"volumeLevel\":\"Niveau de volume\",\"subtitles\":\"Sous-titres\",\"volumeSlider\":\"Curseur de volume\",\"playVideo\":\"Cliquez pour lire la vidéo\",\"fullscreen\":\"Plein écran\",\"scrubberBar\":\"Barre de nettoyage\",\"mute\":\"Muet\",\"unmute\":\"Réactiver le son\",\"pause\":\"Pause\",\"captions\":\"Légendes\",\"nonfullscreen\":\"Pas en plein écran\"},\"version\":\"\",\"isMoreVideosButtonEnabled\":false,\"nexusMetricsConfig\":{\"isInternal\":false,\"widgetMetricsSchemaId\":\"vse.VSECardsEvents.9\",\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"videoAsin\":\"R2TVB3134N8WY7\",\"customerId\":\"A240RR6P6CSJYM\",\"producerId\":\"vsemetrics_playercards\",\"refMarkers\":\"vse_reviews_desktop_R2TVB3134N8WY7_1757075179999_ref\",\"placementContext\":\"cr_inline_review\",\"playerTSMMetricsSchemaId\":\"vse.VSECardsPlayerEvents.9\"},\"shouldStartMuted\":false,\"airyVersion\":\"VideoJS\",\"languagePreferenceStrings\":{},\"enableInactiveFocus\":true,\"isReactFactory\":false,\"enableDelphiAttribution\":false,\"includeReportWidget\":false,\"shouldAutoplay\":false},\"needPlayerFactory\":false,\"isMobile\":false}La vidéo présente le produit en cours d'utilisation.La vidéo vous guide tout au long de la configuration du produit.La vidéo compare plusieurs produits.La vidéo montre le produit en cours de déballage.Video Player is loading.Cliquez pour lire la vidéoJouezMuetCurrent Time 0:00/Duration 0:18Loaded: 33.37%0:00Stream Type LIVESeek to live, currently behind liveLIVERemaining Time -0:18 1xPlayback RateChaptersChaptersDescriptionsdescriptions off, selectedSous-titressubtitles off, selectedFrançais (automatique)Audio Trackdefault, selectedPlein écranThis is a modal window. J'ai adoré mais j'ai été déçu quand je me suis aperçu que contrairement à la description elle ne possède pas la fonction message. L'assistant vocale est top on peut choisir Google ou Alexa. Le paramétrage est très simple : en allumant la montre elle affiche tout de suite un QR CODE qui nous amène sur l'application à télécharger. 2min suffisent pour l'activer.A part ça je la recommande",
+    "date": "Commenté en France le 9 mai 2025",
+    "auteur": "Stephanie PRADELS",
+    "achat_verifie": true
+  },
+  {
+    "id": 2,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Charge plus",
+    "texte": "BonjourMa montre veut plus chargerJ ai nettoyer ,changer la prise neuf mais rien ne fonctionneJe voulais savoir si il y avait une manipulation à faire ou pasMerci a vous",
+    "date": "Commenté en France le 23 août 2025",
+    "auteur": "elodie brun",
+    "achat_verifie": true
+  },
+  {
+    "id": 3,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Nickel",
+    "texte": "J'ai galèrer à la connecter au tel mais avec de l'aide nous avons réussie, bonne qualité et fonctionnalité également merci je suis satisfaite",
+    "date": "Commenté en France le 28 août 2025",
+    "auteur": "Lebrot Mélodie",
+    "achat_verifie": true
+  },
+  {
+    "id": 4,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Montre connectée fonctionnelle",
+    "texte": "Comme je suis daltonien et que c'est un rose discret je n'avais pas vu qu'elle était rose. Elle ne donne pas les secondes donc pas l'idéal pour les cuissons. Par contre l'appli est sympa. La batterie plutôt bonne. Rien à ajouter. J'espère que le poignet va tenir plus longtemps que mes autres montres. Seulement 1 an pour les autres...",
+    "date": "Commenté en France le 13 juillet 2025",
+    "auteur": "Bill dan",
+    "achat_verifie": true
+  },
+  {
+    "id": 5,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Pas de mode d emploi",
+    "texte": "Il n y a pas de notice pour régler la montre !",
+    "date": "Commenté en France le 20 août 2025",
+    "auteur": "Aze",
+    "achat_verifie": true
+  },
+  {
+    "id": 6,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Un peu grande et bracelet un peu irritant",
+    "texte": "Perso, je trouve toujours que c'est galère de les installer",
+    "date": "Commenté en France le 14 août 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 7,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Surveille tout",
+    "texte": "Elle fait le taf mais me fait mal au poignetMesures cardiaque plutôt fiable",
+    "date": "Commenté en France le 3 août 2025",
+    "auteur": "Client d'Amazon_Mu",
+    "achat_verifie": true
+  },
+  {
+    "id": 8,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Visuel du cadran a 15 secondes trop court et pas de réglage autre",
+    "texte": "Produit bon rapport qualité prix mais un seul bémol est que le cadran s’étaient toutes les 15 secondes et il n’y a pas de réglage pour du permanent.",
+    "date": "Commenté en France le 18 juillet 2025",
+    "auteur": "Pat Mas",
+    "achat_verifie": true
+  },
+  {
+    "id": 9,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Recommande",
+    "texte": "Fonctionne très bien mais on ne peut pas répondre au message s’en le téléphone et le chargeur est très compliqué à mettre",
+    "date": "Commenté en France le 1 juillet 2025",
+    "auteur": "Jamais reçue mon colis je demande remboursement",
+    "achat_verifie": true
+  },
+  {
+    "id": 10,
+    "page": 1,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles bof",
+    "texte": "arrive pas a synchroniser",
+    "date": "Commenté en France le 12 juillet 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 11,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Donne l'heure",
+    "texte": "On ne peut pas lire les messages, dommage...",
+    "date": "Commenté en France le 21 juin 2025",
+    "auteur": "HicksIgrec",
+    "achat_verifie": true
+  },
+  {
+    "id": 12,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Messages 👎",
+    "texte": "BonjourDéçu car je l ai achetée surtout pour recevoir les messages de mon fils quand il arrive en cours et que moi je suis au travail mais aucuns messages n arrivent",
+    "date": "Commenté en France le 10 mai 2025",
+    "auteur": "S",
+    "achat_verifie": true
+  },
+  {
+    "id": 13,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Montre",
+    "texte": "Fonctione très bien seul problème je peux pas envoyer des messages les appele pas de soucis",
+    "date": "Commenté en France le 31 mai 2025",
+    "auteur": "inssa",
+    "achat_verifie": true
+  },
+  {
+    "id": 14,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Nc",
+    "texte": "C'est efficace",
+    "date": "Commenté en France le 20 juin 2025",
+    "auteur": "Patricia Mole",
+    "achat_verifie": true
+  },
+  {
+    "id": 15,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Belle montre",
+    "texte": "Elle est très bien.Seule souci la montre ne vibre pas et ne sonne pas quand je reçois un sms",
+    "date": "Commenté en France le 11 mai 2025",
+    "auteur": "hollain-morin",
+    "achat_verifie": true
+  },
+  {
+    "id": 16,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Batterie externe",
+    "texte": "Il se décharge trop vite, ont ne peut charger notre téléphone que 2 fois et c’est fini",
+    "date": "Commenté en France le 6 mai 2025",
+    "auteur": "Sissoko Assa",
+    "achat_verifie": true
+  },
+  {
+    "id": 17,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Parfait",
+    "texte": "Juste le temps d'apprendre à s'en servir mais quand on sait s'en servir après c'est parfait",
+    "date": "Commenté en France le 24 avril 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 18,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Sans plus",
+    "texte": "Fonctionne bien pour le rythme cardiaque, la pression artériel.Pour le nombre de pas dès que l'on remue le poignet en étant assis c'est incrémenté",
+    "date": "Commenté en France le 31 mars 2025",
+    "auteur": "Patrick",
+    "achat_verifie": true
+  },
+  {
+    "id": 19,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles les données affichées ne sont pas exactes",
+    "texte": "les données affichées ne sont pas exactes",
+    "date": "Commenté en France le 27 avril 2025",
+    "auteur": "Titine",
+    "achat_verifie": true
+  },
+  {
+    "id": 20,
+    "page": 2,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Impossible de répondre aux messages",
+    "texte": "Un peu déçue car impossible d'envoyer des messagesAussi les messages ne s'affichent pas en entier",
+    "date": "Commenté en France le 17 mars 2025",
+    "auteur": "Fabrice Barbollat",
+    "achat_verifie": true
+  },
+  {
+    "id": 21,
+    "page": 3,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles Bof",
+    "texte": "Trop imposante à mon poignetJolie et pratique",
+    "date": "Commenté en France le 16 janvier 2025",
+    "auteur": "MB",
+    "achat_verifie": false
+  },
+  {
+    "id": 22,
+    "page": 3,
+    "note": 3,
+    "titre": "3,0 sur 5 étoiles La montre est plutôt simpa",
+    "texte": "{\"clickstreamNexusMetricsConfig\":{\"actionType\":\"DISCOVERY\",\"producerId\":\"vsemetrics_playercards\",\"eventType\":\"IVEVideoView\",\"productId\":\"\",\"eventOwner\":\"vsemetrics_playercards\",\"schemaId\":\"clickstream.CustomerEvent.4\"},\"clientPrefix\":\"vse_reviews_desktop_r8z9bulbjtkxi_1757075211047\",\"ccvDisclosure\":\"\",\"closedCaptionsConfig\":{\"captionsOnTexts\":{\"fr\":\"Français (automatique)\",\"en\":\"Anglais (automatique)\"},\"captionsOffText\":\"Sous-titres désactivés\",\"languageToLabelTexts\":{\"English\":\"Anglais\"}},\"sushiMetricsConfig\":{\"isRobot\":false,\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"sessionId\":\"259-5048849-8046858\",\"refMarkers\":\"vse_reviews_desktop_R8Z9BULBJTKXI_1757075211047_ref\",\"placementContext\":\"cr_inline_review\",\"marketplaceId\":\"A13V1IB3VIYZZH\",\"isInternal\":false,\"endpoint\":\"https://unagi-eu.amazon.com/1/events/com.amazon.eel.vse.metrics.prod.events.test\",\"requestId\":\"5NNYQ9TJR74E79F7F9CV\",\"customerId\":\"A240RR6P6CSJYM\",\"sessionType\":1},\"mimeType\":\"application/x-mpegURL\",\"reportUrl\":\"\",\"nexusMetricsConfig\":{\"isInternal\":false,\"widgetMetricsSchemaId\":\"vse.VSECardsEvents.9\",\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"videoAsin\":\"R8Z9BULBJTKXI\",\"customerId\":\"A240RR6P6CSJYM\",\"producerId\":\"vsemetrics_playercards\",\"refMarkers\":\"vse_reviews_desktop_R8Z9BULBJTKXI_1757075211047_ref\",\"placementContext\":\"cr_inline_review\",\"playerTSMMetricsSchemaId\":\"vse.VSECardsPlayerEvents.9\"},\"videoHeight\":0,\"videoWidth\":0,\"initialClosedCaptions\":\"fr,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-eu-west-1-prod/closedCaptions/f3cc8c79-2651-47bd-87fb-737d6c1e5c31.vtt\",\"videoUrl\":\"https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-eu-west-1-prod/3ff7c3fa-30c4-42cb-8df0-506b6235998b/default.vertical.jobtemplate.hls.m3u8\",\"metricsEmissionMethod\":\"nexus\",\"imageUrl\":\"https://m.media-amazon.com/images/I/51Qc4o8FqTL._SY256._SY256.jpg\",\"awaConfig\":{\"useUpNextComponent\":false,\"clickstreamNexusMetricsConfig\":{\"actionType\":\"DISCOVERY\",\"producerId\":\"vsemetrics_playercards\",\"eventType\":\"IVEVideoView\",\"productId\":\"\",\"eventOwner\":\"vsemetrics_playercards\",\"schemaId\":\"clickstream.CustomerEvent.4\"},\"initialVideo\":\"R8Z9BULBJTKXI\",\"shouldPreload\":true,\"enableClickBasedAttribution\":false,\"isChromelessPlayer\":false,\"closedCaptionsConfig\":{\"captionsOnTexts\":{\"fr\":\"Français (automatique)\",\"en\":\"Anglais (automatique)\"},\"captionsOffText\":\"Sous-titres désactivés\",\"languageToLabelTexts\":{\"English\":\"Anglais\"}},\"enableDynamicBlur\":false,\"showPlayerPlayButton\":false,\"isVideoImmersivePlayer\":false,\"metricsEmissionMethod\":\"nexus\",\"skipInitialFocus\":false,\"playerSkin\":\"none\",\"disabledViewIds\":[\"replayHint\"],\"includeEarnsComissionDisclosure\":false,\"customerId\":\"A240RR6P6CSJYM\",\"containerId\":\"vse_reviews_desktop_r8z9bulbjtkxi_1757075211047-player-b7c87cb1-5120-4437-beb5-4bcd02c53afc\",\"allowCrossOrigin\":false,\"requestMetadata\":{\"marketplaceId\":\"A13V1IB3VIYZZH\",\"clientId\":\"VSE-FR\",\"sessionId\":\"259-5048849-8046858\",\"method\":\"cr_inline_review\",\"requestId\":\"5NNYQ9TJR74E79F7F9CV\",\"pageAsin\":\"\"},\"shouldLoop\":false,\"shouldDisableControls\":false,\"alwaysSetInitialVideo\":true,\"showPlayerCloseButton\":false,\"clientPrefix\":\"\",\"useAutoplayFallback\":false,\"sushiMetricsConfig\":{\"isRobot\":false,\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"sessionId\":\"259-5048849-8046858\",\"refMarkers\":\"vse_reviews_desktop_R8Z9BULBJTKXI_1757075211047_ref\",\"placementContext\":\"cr_inline_review\",\"marketplaceId\":\"A13V1IB3VIYZZH\",\"isInternal\":false,\"endpoint\":\"https://unagi-eu.amazon.com/1/events/com.amazon.eel.vse.metrics.prod.events.test\",\"requestId\":\"5NNYQ9TJR74E79F7F9CV\",\"customerId\":\"A240RR6P6CSJYM\",\"sessionType\":1},\"ospLinkCode\":\"\",\"showPosterImage\":true,\"languageCode\":\"fr\",\"languageLocalization\":{\"play\":\"Jouez\",\"volumeLevel\":\"Niveau de volume\",\"subtitles\":\"Sous-titres\",\"volumeSlider\":\"Curseur de volume\",\"playVideo\":\"Cliquez pour lire la vidéo\",\"fullscreen\":\"Plein écran\",\"scrubberBar\":\"Barre de nettoyage\",\"mute\":\"Muet\",\"unmute\":\"Réactiver le son\",\"pause\":\"Pause\",\"captions\":\"Légendes\",\"nonfullscreen\":\"Pas en plein écran\"},\"version\":\"\",\"isMoreVideosButtonEnabled\":false,\"nexusMetricsConfig\":{\"isInternal\":false,\"widgetMetricsSchemaId\":\"vse.VSECardsEvents.9\",\"clientId\":\"VSE-FR\",\"videoAsinList\":\"\",\"weblabIds\":\"\",\"eventSource\":\"Player\",\"videoAsin\":\"R8Z9BULBJTKXI\",\"customerId\":\"A240RR6P6CSJYM\",\"producerId\":\"vsemetrics_playercards\",\"refMarkers\":\"vse_reviews_desktop_R8Z9BULBJTKXI_1757075211047_ref\",\"placementContext\":\"cr_inline_review\",\"playerTSMMetricsSchemaId\":\"vse.VSECardsPlayerEvents.9\"},\"shouldStartMuted\":false,\"airyVersion\":\"VideoJS\",\"languagePreferenceStrings\":{},\"enableInactiveFocus\":true,\"isReactFactory\":false,\"enableDelphiAttribution\":false,\"includeReportWidget\":false,\"shouldAutoplay\":false},\"needPlayerFactory\":false,\"isMobile\":false}La vidéo présente le produit en cours d'utilisation.La vidéo vous guide tout au long de la configuration du produit.La vidéo compare plusieurs produits.La vidéo montre le produit en cours de déballage.Video Player is loading.Cliquez pour lire la vidéoJouezMuetCurrent Time 0:00/Duration 0:02Loaded: 0.00%0:00Stream Type LIVESeek to live, currently behind liveLIVERemaining Time -0:02 1xPlayback RateChaptersChaptersDescriptionsdescriptions off, selectedSous-titressubtitles off, selectedAudio Trackdefault, selectedPlein écranThis is a modal window. Alors à première vue elle est correct , je ne les tester car c'est pour un cadeaux.La montre à juste un problème avec les sms elle ne peut lire ni envoyer rien est expliquer pour comment on doit faire . Car la notice n'explique rienUn ami à une montre moins chère et il peut envoyer et lire sms .",
+    "date": "Commenté en France le 8 décembre 2024",
+    "auteur": "Mickael",
+    "achat_verifie": false
+  },
+  {
+    "id": 23,
+    "page": 3,
+    "note": 3,
+    "titre": "Helt okej",
+    "texte": "Långsamt interface",
+    "date": "Évalué en Suède le 30 décembre 2024",
+    "auteur": "Axell",
+    "achat_verifie": true
+  },
+  {
+    "id": 24,
+    "page": 3,
+    "note": 3,
+    "titre": "Pas précis",
+    "texte": "Un peu déçu.Les constantes affichées pas juste.",
+    "date": "Commenté en Belgique le 27 mars 2025",
+    "auteur": "Odile Godbille",
+    "achat_verifie": true
+  },
+  {
+    "id": 25,
+    "page": 3,
+    "note": 3,
+    "titre": "Buono ma la batteria scarsa",
+    "texte": "Carino e con tante funzioni, ma dopo due mesi la batteria ha iniziato a scaricarsi troppo velocemente, circa 1 giorno e per ricaricarla del tutto ci vogliono 24 ore.A me serviva solo per il contapassi e altre piccole funzioni di controllo della salute che hanno funzionato bene.Il prezzo è comunque veramente basso",
+    "date": "Commenté en Italie le 7 juin 2025",
+    "auteur": "FERNANDA CALONI",
+    "achat_verifie": true
+  },
+  {
+    "id": 26,
+    "page": 3,
+    "note": 3,
+    "titre": "Ok",
+    "texte": "Eigentlich eine ganz gute Uhr vorallem für den Preis. Leider klappt Benachrichtigung von WhatsApp nicht.",
+    "date": "Commenté en Allemagne le 4 avril 2025",
+    "auteur": "Michelle B.",
+    "achat_verifie": true
+  },
+  {
+    "id": 27,
+    "page": 3,
+    "note": 3,
+    "titre": "OROLOGIO",
+    "texte": "Tutto sommato un buon prodotto. Semplice ed ha tutto. Per me il quadrante è un po' larghino dato che io ho la mano piccola e il polso stretto, però l'orologio ha tutto. Alcune funzioni non le ho provate. Nel complesso un buon prodotto.Rettifica recensione: 1 Luglio 2025. Si è bagnato e non si è più riacceso. Era resistente all'acqua.",
+    "date": "Commenté en Italie le 17 juin 2025",
+    "auteur": "DANIELA",
+    "achat_verifie": true
+  },
+  {
+    "id": 28,
+    "page": 3,
+    "note": 3,
+    "titre": ".",
+    "texte": "Funciona bien, pero aunque se pueda meter al agua, no por mucho tiempo. El mío se ha estropeado por nadar en la piscina.",
+    "date": "Commenté en Espagne le 13 août 2025",
+    "auteur": "Cliente Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 29,
+    "page": 3,
+    "note": 3,
+    "titre": "Non adeguato",
+    "texte": "Non molto intuitivo,molto lento e metà delle cose sono in inglese e metà in italiano.( La lingua non è un problema ma mi fa strano che è tutto un po' arrangiato.",
+    "date": "Commenté en Italie le 10 juin 2025",
+    "auteur": "Kamilla",
+    "achat_verifie": true
+  },
+  {
+    "id": 30,
+    "page": 3,
+    "note": 3,
+    "titre": "Non mi conta le kcal per l’allenamento",
+    "texte": "Non funziona la modalità sport non mi da quante kcal brucio durante allenamento nonostante selezioni questa modalità",
+    "date": "Commenté en Italie le 4 juin 2025",
+    "auteur": "Sparacino Annamaria",
+    "achat_verifie": true
+  },
+  {
+    "id": 31,
+    "page": 4,
+    "note": 3,
+    "titre": "Ottimo rapporto qualità prezzo anche se non rispecchia le mie aspettative",
+    "texte": "Lo avevo acquistato per collegarlo a Samsung Healt ma non è un modello riconosciuto",
+    "date": "Commenté en Italie le 26 mai 2025",
+    "auteur": "Cliente Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 32,
+    "page": 4,
+    "note": 3,
+    "titre": "FALTA INFORMACIÓN EN LA DESCRIPCIÓN",
+    "texte": "Llegó todo bien pero el reloj no lee WhatsApp, solo SMS. Yo lo usaré para caminar y eso lo cumple bien.",
+    "date": "Commenté en Espagne le 7 avril 2025",
+    "auteur": "Catalina Miguélez González",
+    "achat_verifie": true
+  },
+  {
+    "id": 33,
+    "page": 4,
+    "note": 3,
+    "titre": "Orologio intelligente",
+    "texte": "Ottimo prodotto, lo consiglio",
+    "date": "Commenté en Italie le 9 mai 2025",
+    "auteur": "Cristina",
+    "achat_verifie": true
+  },
+  {
+    "id": 34,
+    "page": 4,
+    "note": 3,
+    "titre": "Meeste recensies vindt ik ,zijn overdreven",
+    "texte": "Heb deze aangeschaft maar de Nederlandse taal is niet instelbaar.",
+    "date": "Commenté en Belgique le 25 juillet 2025",
+    "auteur": "dirk",
+    "achat_verifie": true
+  },
+  {
+    "id": 35,
+    "page": 4,
+    "note": 3,
+    "titre": "No mide bien las horas de sueño",
+    "texte": "Es precioso, pero llevo una semana con el y no mide nada bien cuando te duermes y cuando te despiertas.",
+    "date": "Commenté en Espagne le 25 février 2025",
+    "auteur": "Irene sanchez",
+    "achat_verifie": true
+  },
+  {
+    "id": 36,
+    "page": 4,
+    "note": 3,
+    "titre": "Es comodo y ligero",
+    "texte": "Me gusta aunque todavia no e podido darle tanto uso",
+    "date": "Commenté en Espagne le 12 mars 2025",
+    "auteur": "Antonio M.",
+    "achat_verifie": true
+  },
+  {
+    "id": 37,
+    "page": 4,
+    "note": 3,
+    "titre": "Idea regalo",
+    "texte": "Prodotto con buin rapporto qualità prezzo.",
+    "date": "Commenté en Italie le 1 avril 2025",
+    "auteur": "Sergio Gagliardi",
+    "achat_verifie": true
+  },
+  {
+    "id": 38,
+    "page": 4,
+    "note": 3,
+    "titre": "No puedo configurar el WhatsApp",
+    "texte": "Es bonito y cómodo, pero no consigo configurar el WhatsApp",
+    "date": "Commenté en Espagne le 29 janvier 2025",
+    "auteur": "carla",
+    "achat_verifie": true
+  },
+  {
+    "id": 39,
+    "page": 4,
+    "note": 3,
+    "titre": "Gut",
+    "texte": "Gut",
+    "date": "Commenté en Allemagne le 27 mars 2025",
+    "auteur": "Abdo Sukari",
+    "achat_verifie": true
+  }
+]
