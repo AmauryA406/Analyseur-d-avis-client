@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bon rapport qualité/ prix",
+    "texte": "Très contente pour l’instant. Reçue rapidement. Fonctionne bien, est très opérationnelle. On peut choisir les notifications qu’on reçoit, et je l’utilise pour la nuit surtout! Très bon rapport qualité prix. Seul point négatif je la trouve super épaisse",
+    "date": "Commenté en France le 20 juillet 2025",
+    "auteur": "Gomes Coline",
+    "achat_verifie": true
+  },
+  {
+    "id": 2,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très pratique",
+    "texte": "Parfaite.",
+    "date": "Commenté en France le 30 août 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 3,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Un outil apprécié",
+    "texte": "Qualité prix imbattables. Disign et ergonomie de qualité",
+    "date": "Commenté en France le 20 août 2025",
+    "auteur": "dubrunfaut thierry",
+    "achat_verifie": true
+  },
+  {
+    "id": 4,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Facile à installer sur ios",
+    "texte": "Rapport qualité prix très bien - jolie et facile à installer - fonctionne bien en ios",
+    "date": "Commenté en France le 12 juillet 2025",
+    "auteur": "Brigitte BLEUSE",
+    "achat_verifie": true
+  },
+  {
+    "id": 5,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles le prix connection simple",
+    "texte": "montre le prix est light monte étanche écran bien livré avec bracelet monté sur la montre que demander de plus",
+    "date": "Commenté en France le 13 août 2025",
+    "auteur": "orlik didier",
+    "achat_verifie": true
+  },
+  {
+    "id": 6,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Belle montre",
+    "texte": "Très belle montre Pour le moment fidèle au attentes on verras avec le temp maintenant Pour le prix je recommande",
+    "date": "Commenté en France le 11 août 2025",
+    "auteur": "Le lostec chrystelle",
+    "achat_verifie": true
+  },
+  {
+    "id": 7,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Facile à installer et à utiliser",
+    "texte": "Très bien, je la recommande",
+    "date": "Commenté en France le 11 août 2025",
+    "auteur": "céline h",
+    "achat_verifie": true
+  },
+  {
+    "id": 8,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Je recommande vraiment",
+    "texte": "Elle est très pratique en plus, elle ne se décharge pas vite",
+    "date": "Commenté en France le 5 août 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 9,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfait",
+    "texte": "Contente de ma nouvelle montre",
+    "date": "Commenté en France le 10 août 2025",
+    "auteur": "roquain",
+    "achat_verifie": true
+  },
+  {
+    "id": 10,
+    "page": 1,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Superbe montre connectée",
+    "texte": "Super montreJe m'en sers pour aller courir elle est bienSuper belle en plusJe recommande surtout pour ce prix",
+    "date": "Commenté en France le 2 août 2025",
+    "auteur": "Saulliere",
+    "achat_verifie": true
+  },
+  {
+    "id": 11,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Qualité prix",
+    "texte": "Comme sur la photo et intéressant en terme de qualité prix",
+    "date": "Commenté en France le 4 août 2025",
+    "auteur": "Elvis",
+    "achat_verifie": true
+  },
+  {
+    "id": 12,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles indispensable",
+    "texte": "elle est parfaite. En plus la batterie tient longtemps",
+    "date": "Commenté en France le 31 juillet 2025",
+    "auteur": "Carole Negre",
+    "achat_verifie": true
+  },
+  {
+    "id": 13,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Tres bon produit 👍",
+    "texte": "Très très satisfaite de ma montre. Super rapport qualité prix.Seul petit bémol pas de SMS.",
+    "date": "Commenté en France le 25 juillet 2025",
+    "auteur": "badinand mireille",
+    "achat_verifie": true
+  },
+  {
+    "id": 14,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bien",
+    "texte": "Très bien jolie mais comment enlever le mode vibreur ?Merci",
+    "date": "Commenté en France le 24 juillet 2025",
+    "auteur": "julie le picard",
+    "achat_verifie": true
+  },
+  {
+    "id": 15,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Conforme",
+    "texte": "Correspond à mes attentes",
+    "date": "Commenté en France le 29 juillet 2025",
+    "auteur": "Tane02",
+    "achat_verifie": true
+  },
+  {
+    "id": 16,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre Connectée femme rose",
+    "texte": "Super. Colis bien envoyé. Rien à signaler",
+    "date": "Commenté en France le 22 juillet 2025",
+    "auteur": "Delgoffe",
+    "achat_verifie": true
+  },
+  {
+    "id": 17,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bon rapport qualité prix",
+    "texte": "Je me suis acheté cette montre il y a un peu plus de 3mois et je la trouve top. Elle tient très bien la charge. On peut changer le decor de l'écran, il y a un large choix d'option dans les menus. Le son en appel est pas mal je trouve par rapport a une autre montre que j'ai essayé.Pour le prix je l'ai trouvé tellement bien que j'en ai acheté une pour ma maman.",
+    "date": "Commenté en France le 3 juin 2025",
+    "auteur": "Cindy",
+    "achat_verifie": true
+  },
+  {
+    "id": 18,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super montre",
+    "texte": "Très bien",
+    "date": "Commenté en France le 23 juillet 2025",
+    "auteur": "Schmid Christelle",
+    "achat_verifie": true
+  },
+  {
+    "id": 19,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Bonne montre",
+    "texte": "Très jolie, solide.Seul bémol, après quelques mois d'utilisation, un des petits trucs (je ne connais pas le nom) qui tient le bracelet de la montre, est cassé",
+    "date": "Commenté en France le 26 juin 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 20,
+    "page": 2,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée",
+    "texte": "Article conforme à mes souhaits.",
+    "date": "Commenté en France le 17 juillet 2025",
+    "auteur": "Marie-france HONORIN",
+    "achat_verifie": true
+  },
+  {
+    "id": 21,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Tien bien la batterie (~ 3-4jours)",
+    "texte": "Elle est incroyable, sa calcule nos pas, les battements du cœur, les heures de sommeils, la pression sanguine, on reçois les appels, les messages, on a la météo et on peut jouer à angry bird",
+    "date": "Commenté en France le 25 juin 2025",
+    "auteur": "p_mar",
+    "achat_verifie": true
+  },
+  {
+    "id": 22,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très satisfait",
+    "texte": "Super rien à dire. Je répond avec mon montre.",
+    "date": "Commenté en France le 6 juillet 2025",
+    "auteur": "Hovhannisyan Ani",
+    "achat_verifie": true
+  },
+  {
+    "id": 23,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super qualité prix",
+    "texte": "Très bonne montre connectée je vous la recommande",
+    "date": "Commenté en France le 10 juillet 2025",
+    "auteur": "Canal",
+    "achat_verifie": true
+  },
+  {
+    "id": 24,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Produit top",
+    "texte": "Montre facile à connecter, légère, mignonne à porter, super pratique avec de nombreuses fonctionnalités.",
+    "date": "Commenté en France le 4 juillet 2025",
+    "auteur": "Angela Grajales",
+    "achat_verifie": true
+  },
+  {
+    "id": 25,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfait rapport qualité prix",
+    "texte": "J’ai commandé cette montre pour ma fille et elle est vraiment à la hauteur de nos attentes. Elle l’utilise à la maison et lors de ces déplacements. La montre est personnalisable et très jolie. Toutes les notifications apparaissent sur la montre. Elle permet aussi de recevoir des appels, ce qui n’était pas le cas d’une ancienne montre connectée qu’elle avait.L’autonomie est impressionnante (plus d’une semaine)Bref nous sommes ravies, je recommande cette montre",
+    "date": "Commenté en France le 8 mai 2025",
+    "auteur": "Sgf19",
+    "achat_verifie": true
+  },
+  {
+    "id": 26,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bien",
+    "texte": "Franchement pour ce prix nous nous attendions pas à une montre aussi bien !En revanche le bracelet vien de ce casser et je trouve pas de service client 😔",
+    "date": "Commenté en France le 8 juin 2025",
+    "auteur": "florence sellami",
+    "achat_verifie": true
+  },
+  {
+    "id": 27,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Bon produit",
+    "texte": "Bon rapport qualité prix",
+    "date": "Commenté en France le 2 juillet 2025",
+    "auteur": "marie",
+    "achat_verifie": true
+  },
+  {
+    "id": 28,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super",
+    "texte": "Parfait , fait l’affaire pour le prix !Y’a tout les paramètres pour le sport ( calories dépensé, les pas, rythme cardiaque…)On peut activer les notifications des applications ( Snap, insta ..)",
+    "date": "Commenté en France le 1 juin 2025",
+    "auteur": "Cool 👍🏻 depuis le temps que j’en voulais une , pour le prix c’est déjà bien !",
+    "achat_verifie": true
+  },
+  {
+    "id": 29,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfait",
+    "texte": "Très jolie, se porte bien et facile d utilisation",
+    "date": "Commenté en France le 23 juin 2025",
+    "auteur": "Asma",
+    "achat_verifie": true
+  },
+  {
+    "id": 30,
+    "page": 3,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée femme",
+    "texte": "il faut activer le Bluetooth pour émettre et recevoir des appels ce qui est dommage. Facile d'utilisation contente de mon achat",
+    "date": "Commenté en France le 16 juin 2025",
+    "auteur": "Laurence",
+    "achat_verifie": true
+  },
+  {
+    "id": 31,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Ludique",
+    "texte": "Ras très bon produit je conseille",
+    "date": "Commenté en France le 22 juin 2025",
+    "auteur": "carole fisson",
+    "achat_verifie": true
+  },
+  {
+    "id": 32,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Article très bon",
+    "texte": "Très bonne qualité je recommande et reçu dans les temps",
+    "date": "Commenté en France le 17 juin 2025",
+    "auteur": "Bourgeois",
+    "achat_verifie": true
+  },
+  {
+    "id": 33,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Fait le job",
+    "texte": "Reçu rapidement. Facile d'installation. Très correcte pour le prix . A voir dans le temps mais contente de mon achat",
+    "date": "Commenté en France le 6 juin 2025",
+    "auteur": "Boudries Karima",
+    "achat_verifie": true
+  },
+  {
+    "id": 34,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super montre",
+    "texte": "J'ai acheter la montre car au travail je marche énormément minimum 20 km par jour telephone interdit sachant que j'ai des applications qui me paye pour les pas effectués. Mes collègues mon montrer leur montre 70 à 100 euros.Du coup j'ai trouver celle là sur Amazon reçu très vite montrer à mes collègues nos montres exactement pareil la différence ces le prix . Je l'ai reçu très vite le lendemain de la commande payée 4 à 5 fois moin cher que eux pour exactement même appli et surtout même montre je conseille à tout le monde car elle et top belle pratique",
+    "date": "Commenté en France le 31 janvier 2025",
+    "auteur": "Famille Santoni Lambour",
+    "achat_verifie": true
+  },
+  {
+    "id": 35,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Sympa 😊",
+    "texte": "Parfait facile à connecter avec iPhoneJe recommandeFonctionne avec appli gloryfitMon fils est ravi",
+    "date": "Commenté en France le 4 juin 2025",
+    "auteur": "Lallement",
+    "achat_verifie": true
+  },
+  {
+    "id": 36,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée rose",
+    "texte": "Très satisfaite de mon achat plus besoin de mettre le prix cette montre à toutes les fonctionnalités nécessaires elle est très pratique et jolie 🥰 (à voir avec le temps...)Je recommande elle est arrivée rapidement elle est top!!!",
+    "date": "Commenté en France le 24 avril 2025",
+    "auteur": "Esma",
+    "achat_verifie": true
+  },
+  {
+    "id": 37,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super jolie montre",
+    "texte": "Satisfaite de cette montre . Merci",
+    "date": "Commenté en France le 10 juin 2025",
+    "auteur": "JYL",
+    "achat_verifie": true
+  },
+  {
+    "id": 38,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très beau design",
+    "texte": "J'adore, elle fonctionne très bien et elle a un beau design.Le rapport qualité/prix est correct.Je recommande cette montre",
+    "date": "Commenté en France le 21 mai 2025",
+    "auteur": "V@lOu",
+    "achat_verifie": true
+  },
+  {
+    "id": 39,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bon rapport qualité prix pour cette montre",
+    "texte": "Cette montre connectée a été offerte à Noel et fonctionne très bien. L’association avec le téléphone marche correctement. Très bon rapport qualité prix.",
+    "date": "Commenté en France le 17 mai 2025",
+    "auteur": "Céline Bentz",
+    "achat_verifie": true
+  },
+  {
+    "id": 40,
+    "page": 4,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Je recommande",
+    "texte": "Reçu 2 jours après ma commande. Taille de l’écran correcte.La connexion entre le tel et la montre très facile . Je l’ai pris surtout pour la FC et la saturation et franchement très fiable ( comparaison avec mon saturomètre). Pour le prix je suis agréablement surprise. Je recommande.",
+    "date": "Commenté en France le 22 mars 2025",
+    "auteur": "Aurore. V",
+    "achat_verifie": true
+  },
+  {
+    "id": 41,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Satisfait",
+    "texte": "Montre homme",
+    "date": "Commenté en France le 15 juin 2025",
+    "auteur": "Sophie BELLOT - DAIRE",
+    "achat_verifie": true
+  },
+  {
+    "id": 42,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Impossible de ce connecter",
+    "texte": "Impossible de trouver les paramètres pour régler l'heure et impossible de le connecter au téléphone de mon fils sinon la montre est très bien.",
+    "date": "Commenté en France le 12 mai 2025",
+    "auteur": "Adeline Couvelard",
+    "achat_verifie": true
+  },
+  {
+    "id": 43,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Facile d'utilisation",
+    "texte": "Mon enfant ne s'en sépare plus",
+    "date": "Commenté en France le 14 juin 2025",
+    "auteur": "Mib",
+    "achat_verifie": true
+  },
+  {
+    "id": 44,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre",
+    "texte": "Fonctionne très bien.",
+    "date": "Commenté en France le 6 juin 2025",
+    "auteur": "Manue",
+    "achat_verifie": true
+  },
+  {
+    "id": 45,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée",
+    "texte": "Très bien Fais le job mais J utile peu d applications Joli ecran Programme assez facile a installer une fois qu on a qr code et le bluetooth du téléphone",
+    "date": "Commenté en France le 14 avril 2025",
+    "auteur": "SYLVIE.B",
+    "achat_verifie": true
+  },
+  {
+    "id": 46,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfait",
+    "texte": "Article conforme à l'annonce parfait",
+    "date": "Commenté en France le 3 juin 2025",
+    "auteur": "sophie",
+    "achat_verifie": true
+  },
+  {
+    "id": 47,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Recommande",
+    "texte": "Top pratique d'utilisation",
+    "date": "Commenté en France le 3 juin 2025",
+    "auteur": "LIETAERT Sloane",
+    "achat_verifie": true
+  },
+  {
+    "id": 48,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Superbe montre",
+    "texte": "Superbe montre connectée. Application extrêmement facile et la qualité / prix est juste super 👍 elle fait les appels et en plus on peux personnaliser l'écran 😊 foncez les yeux fermés",
+    "date": "Commenté en France le 8 avril 2025",
+    "auteur": "Laëtitia",
+    "achat_verifie": true
+  },
+  {
+    "id": 49,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles La fidélité.",
+    "texte": "Super belle montre et pas cher du tout. Merci AMAZON",
+    "date": "Commenté en France le 22 mai 2025",
+    "auteur": "Yasmina meziane",
+    "achat_verifie": true
+  },
+  {
+    "id": 50,
+    "page": 5,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Ravie",
+    "texte": "Agréablement surprise de toutes les fonctions que possède cette montre.",
+    "date": "Commenté en France le 20 mai 2025",
+    "auteur": "Rolet",
+    "achat_verifie": true
+  },
+  {
+    "id": 51,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très jolie",
+    "texte": "Et ma maman a été très contente pour son anniversaire",
+    "date": "Commenté en France le 4 mai 2025",
+    "auteur": "marion",
+    "achat_verifie": true
+  },
+  {
+    "id": 52,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très satisfaite",
+    "texte": "Produit bien emballer. Fonctionne très bien. Très contente de mon achat",
+    "date": "Commenté en France le 6 mai 2025",
+    "auteur": "Ludivine Truszkowski",
+    "achat_verifie": true
+  },
+  {
+    "id": 53,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfait",
+    "texte": "J’ai reçu la montre le lendemain de l’achat vraiment très contente de la rapidité et la montre et vraiment bien programmé complet vraiment parfait rapport qualités prix je recommande",
+    "date": "Commenté en France le 24 mars 2025",
+    "auteur": "lerand",
+    "achat_verifie": true
+  },
+  {
+    "id": 54,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Agreable",
+    "texte": "Très bon produits facile d utilisation. Agréable à porter.",
+    "date": "Commenté en France le 13 mai 2025",
+    "auteur": "bascou virginie",
+    "achat_verifie": true
+  },
+  {
+    "id": 55,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre très sympa à petit prix !",
+    "texte": "Très bien pour le prix, fonctionne très bien, l application est facile d'utilisation. Juste je trouve le cadran grand pour les femmes, enfin pour moi qui est des petits poignets. Je suis ravie montre sympathique à petit prix.",
+    "date": "Commenté en France le 7 mars 2025",
+    "auteur": "Calilouna",
+    "achat_verifie": true
+  },
+  {
+    "id": 56,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Je conseille très bien",
+    "texte": "Facile à utiliserFonctionne très très bien",
+    "date": "Commenté en France le 29 avril 2025",
+    "auteur": "fifi fabrice",
+    "achat_verifie": true
+  },
+  {
+    "id": 57,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bonne montre",
+    "texte": "Fonctionnement très bien très facile d'utilisation je recommande vivement cette montre",
+    "date": "Commenté en France le 10 mai 2025",
+    "auteur": "THIERRY Garnier",
+    "achat_verifie": true
+  },
+  {
+    "id": 58,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Fonctionne bien",
+    "texte": "Super achat",
+    "date": "Commenté en France le 13 mai 2025",
+    "auteur": "VIOLAINE",
+    "achat_verifie": true
+  },
+  {
+    "id": 59,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très belle",
+    "texte": "Très belle très belle",
+    "date": "Commenté en France le 11 mai 2025",
+    "auteur": "Delice",
+    "achat_verifie": true
+  },
+  {
+    "id": 60,
+    "page": 6,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre",
+    "texte": "Très jolie, parfaite pour mes attentes.",
+    "date": "Commenté en France le 24 avril 2025",
+    "auteur": "Sylvie c'est tout",
+    "achat_verifie": true
+  },
+  {
+    "id": 61,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée",
+    "texte": "Bon rapport qualité prix",
+    "date": "Commenté en France le 6 mai 2025",
+    "auteur": "Citronelle",
+    "achat_verifie": true
+  },
+  {
+    "id": 62,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bien",
+    "texte": "C'est une montre très bien pour ma copine elle était ravie",
+    "date": "Commenté en France le 1 avril 2025",
+    "auteur": "Villanueva",
+    "achat_verifie": true
+  },
+  {
+    "id": 63,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super Montre multifonctions",
+    "texte": "Montre très complète, vraiment géniale, avec un nombre impressionnant de fonctions. Vue son tarif défiant toutes concurrence, à recommander. En plus, je l'ai reçue très rapidement.",
+    "date": "Commenté en France le 15 février 2025",
+    "auteur": "wopro",
+    "achat_verifie": true
+  },
+  {
+    "id": 64,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée",
+    "texte": "Très bonne montre , de bonnes fonctionnalités, de plus c'est une I.P.68 donc étanche jusqu'à 1metre sous l'eau j'en suis ravie !!! Je recommande",
+    "date": "Commenté en France le 21 mars 2025",
+    "auteur": "Jess24",
+    "achat_verifie": true
+  },
+  {
+    "id": 65,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connectée",
+    "texte": "Article de très bonne qualité et pas cher",
+    "date": "Commenté en France le 2 avril 2025",
+    "auteur": "séverine christian",
+    "achat_verifie": true
+  },
+  {
+    "id": 66,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Ne reçois pas les sms",
+    "texte": "Ne reçois pas les sms, dommage",
+    "date": "Commenté en France le 23 avril 2025",
+    "auteur": "remy FRATY",
+    "achat_verifie": true
+  },
+  {
+    "id": 67,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Nickel",
+    "texte": "Tout est au top, comme la description.",
+    "date": "Commenté en France le 20 avril 2025",
+    "auteur": "Tichat",
+    "achat_verifie": true
+  },
+  {
+    "id": 68,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfaite",
+    "texte": "Parfaite pour le prix à voir le temps que cela durera...",
+    "date": "Commenté en France le 23 mars 2025",
+    "auteur": "dany escoubeyron",
+    "achat_verifie": true
+  },
+  {
+    "id": 69,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles La qualite6",
+    "texte": "Super",
+    "date": "Commenté en France le 25 avril 2025",
+    "auteur": "Sandrine Redoute",
+    "achat_verifie": true
+  },
+  {
+    "id": 70,
+    "page": 7,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Kikou",
+    "texte": "Bonjour Amazon je suis très content de la montre que je vous ai acheté chez vous ça marche très très bien impeccable",
+    "date": "Commenté en France le 21 février 2025",
+    "auteur": "jeanpierre weber",
+    "achat_verifie": true
+  },
+  {
+    "id": 71,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super",
+    "texte": "Jolie et pratique, très facile à utiliser.",
+    "date": "Commenté en France le 15 avril 2025",
+    "auteur": "Audrey",
+    "achat_verifie": true
+  },
+  {
+    "id": 72,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Superbe qualité et durabilité",
+    "texte": "Super qualité. La batterie tient au top. C'est dommage que toutes les appli ne soient pas compatibles. On espère que cela arrivera vite",
+    "date": "Commenté en France le 17 février 2025",
+    "auteur": "Lilasoum",
+    "achat_verifie": true
+  },
+  {
+    "id": 73,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Au top !",
+    "texte": "Ravie de l'avoir acheter. Elle est vraiment trop jolie et pratique à utiliser.",
+    "date": "Commenté en France le 27 février 2025",
+    "auteur": "Emekli",
+    "achat_verifie": true
+  },
+  {
+    "id": 74,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre",
+    "texte": "Très jolie facile à connecter",
+    "date": "Commenté en France le 1 avril 2025",
+    "auteur": "legay odile",
+    "achat_verifie": true
+  },
+  {
+    "id": 75,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Article conforme",
+    "texte": "Bon article. Conforme à la description.",
+    "date": "Commenté en France le 28 mars 2025",
+    "auteur": "Client Kindle",
+    "achat_verifie": true
+  },
+  {
+    "id": 76,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Jolie montre",
+    "texte": "Elle est très simple à utiliser. J aime son cadran, trop beau",
+    "date": "Commenté en France le 16 février 2025",
+    "auteur": "Nat",
+    "achat_verifie": true
+  },
+  {
+    "id": 77,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Super",
+    "texte": "Simple et efficace",
+    "date": "Commenté en France le 29 mars 2025",
+    "auteur": "FRANKY",
+    "achat_verifie": true
+  },
+  {
+    "id": 78,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Nikel",
+    "texte": "Elle plaît",
+    "date": "Commenté en France le 20 mars 2025",
+    "auteur": "Gras",
+    "achat_verifie": true
+  },
+  {
+    "id": 79,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles La qualité",
+    "texte": "C'est un bon produit un rapport qualité-prix très bien fini très satisfait",
+    "date": "Commenté en France le 9 mars 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 80,
+    "page": 8,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre swach",
+    "texte": "C'est articles et conforme à se qui et décrit quand je l ai commandé",
+    "date": "Commenté en France le 1 mars 2025",
+    "auteur": "Pardaens andree",
+    "achat_verifie": true
+  },
+  {
+    "id": 81,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Belle montre",
+    "texte": "Belle montre,fluide, la charge tien plus de 7 joursAssez précise dans ses fonctionsVendeur sérieux je recommande.",
+    "date": "Commenté en France le 16 février 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 82,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles bonne montre connéctée pas chere",
+    "texte": "excellent rapport qualité prix",
+    "date": "Commenté en France le 13 mars 2025",
+    "auteur": "Justorel",
+    "achat_verifie": true
+  },
+  {
+    "id": 83,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles pratique",
+    "texte": "très jolie",
+    "date": "Commenté en France le 1 avril 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 84,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Facilité d'utilisation",
+    "texte": "Montre très facile d'utilisation ma femme est ravie de toutes les fonctionnalités que possède cette montre A voir la durée dans le temps Bien cordialement",
+    "date": "Commenté en France le 2 janvier 2025",
+    "auteur": "ALAIN",
+    "achat_verifie": true
+  },
+  {
+    "id": 85,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Notice explicative en français",
+    "texte": "Super",
+    "date": "Commenté en France le 14 mars 2025",
+    "auteur": "Faccioli",
+    "achat_verifie": true
+  },
+  {
+    "id": 86,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Ravie",
+    "texte": "Très bonne article",
+    "date": "Commenté en France le 4 mars 2025",
+    "auteur": "bequet",
+    "achat_verifie": true
+  },
+  {
+    "id": 87,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Cute, stylish, easy to use",
+    "texte": "Easy to set up, watch band doesn't move around, but still allows your skin to breathe. The system in it's self is user friendly. happy with the product.",
+    "date": "Commenté en France le 26 novembre 2024",
+    "auteur": "Emma Ree",
+    "achat_verifie": true
+  },
+  {
+    "id": 88,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre connecté",
+    "texte": "Pour le prix elle fais bien son job. Mon fils en est ravi.",
+    "date": "Commenté en France le 6 janvier 2025",
+    "auteur": "Delphine",
+    "achat_verifie": true
+  },
+  {
+    "id": 89,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Je ne m'attendais pas à ça. Très bien",
+    "texte": "Parfaite.",
+    "date": "Commenté en France le 19 février 2025",
+    "auteur": "Èlodie. B",
+    "achat_verifie": true
+  },
+  {
+    "id": 90,
+    "page": 9,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bon produit.",
+    "texte": "Parfait pour un petit prix.",
+    "date": "Commenté en France le 10 février 2025",
+    "auteur": "Client d'Amazon",
+    "achat_verifie": true
+  },
+  {
+    "id": 91,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Ras c'est impressionnant ce que la montre sait faire pour ce prix d'achat.",
+    "texte": "Ras",
+    "date": "Commenté en France le 7 février 2025",
+    "auteur": "Philippe",
+    "achat_verifie": true
+  },
+  {
+    "id": 92,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Bien",
+    "texte": "Ma fille est contente ,facile d'utilisation",
+    "date": "Commenté en France le 30 décembre 2024",
+    "auteur": "Tetel",
+    "achat_verifie": true
+  },
+  {
+    "id": 93,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Belle montre connectée",
+    "texte": "Je recommande cette montre connectée très facile d'utilisationBelle couleurBeaucoup d'applicationsLes appels sont très bien le son est parfait",
+    "date": "Commenté en France le 14 novembre 2024",
+    "auteur": "Sebastien",
+    "achat_verifie": true
+  },
+  {
+    "id": 94,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre",
+    "texte": "Article au top.",
+    "date": "Commenté en France le 7 février 2025",
+    "auteur": "Leroy Anne-sophie",
+    "achat_verifie": true
+  },
+  {
+    "id": 95,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles montre",
+    "texte": "super conforme et mieux encore",
+    "date": "Commenté en France le 25 décembre 2024",
+    "auteur": "FCCM972",
+    "achat_verifie": true
+  },
+  {
+    "id": 96,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre impeccable",
+    "texte": "Belle montre, complète, plusieurs modes mais je ne reçois pas les notifs watsap... Je cherche encore",
+    "date": "Commenté en France le 30 novembre 2024",
+    "auteur": "isma",
+    "achat_verifie": true
+  },
+  {
+    "id": 97,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Très bon produit",
+    "texte": "Je suis satisfaite de mon achat le produit est arrivé bien emballé, sans retardIl fonctionne bienJe le recommande",
+    "date": "Commenté en France le 8 novembre 2024",
+    "auteur": "Sam Berry",
+    "achat_verifie": true
+  },
+  {
+    "id": 98,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Montre Connectée",
+    "texte": "Cette montre est vraiment très bien, je l'adore.",
+    "date": "Commenté en France le 14 décembre 2024",
+    "auteur": "Valou",
+    "achat_verifie": true
+  },
+  {
+    "id": 99,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Topissime",
+    "texte": "Pratique et facile à utiliser. J'aime beaucoup.",
+    "date": "Commenté en France le 27 novembre 2024",
+    "auteur": "Josepha MASAMBA",
+    "achat_verifie": true
+  },
+  {
+    "id": 100,
+    "page": 10,
+    "note": 5,
+    "titre": "5,0 sur 5 étoiles Parfait",
+    "texte": "Très bonne qualité, très facile d'utilisation je recommande",
+    "date": "Commenté en France le 11 décembre 2024",
+    "auteur": "Ness",
+    "achat_verifie": true
+  }
+]
