@@ -13,7 +13,7 @@ from pathlib import Path
 def load_groq_results():
     """Charge les résultats de l'analyse Groq."""
     
-    results_file = "V1.0/data/processed/groq_analysis_results.json"
+    results_file = "V1.0/data/processed/groq_complete_analysis_results.json"
     
     if not Path(results_file).exists():
         print(f"❌ Fichier de résultats Groq non trouvé: {results_file}")
