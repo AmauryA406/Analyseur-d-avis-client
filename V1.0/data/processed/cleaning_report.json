@@ -1,0 +1,10 @@
+{
+  "stats": {
+    "total_processed": 317,
+    "polluted_found": 2,
+    "avg_size_reduction": 0.5935676934108757,
+    "cleaning_errors": 0
+  },
+  "pollution_patterns_count": 22,
+  "strategy": "hybrid_modal_delimiter_with_json_fallback"
+}
