@@ -1,8 +1,8 @@
 """
-Analyseur d'Avis Clients avec Groq LLM - Version Production
-===========================================================
+Analyseur Groq Complet - TOUS les 317 avis
+==========================================
 
-Analyse RÉELLE de vos 317 avis Amazon avec Groq Llama-3.1 (GRATUIT).
+Version optimisée pour analyser l'intégralité de votre dataset avec Groq.
 """
 
 import json
@@ -20,8 +20,8 @@ except ImportError:
     GROQ_AVAILABLE = False
     print("❌ Module 'groq' non installé. Installez avec: pip install groq")
 
-class GroqAnalyzer:
-    """Analyseur utilisant Groq Llama-3.1 pour analyse réelle."""
+class CompleteGroqAnalyzer:
+    """Analyseur Groq pour dataset complet."""
     
     def __init__(self, api_key: str = None):
         """Initialise l'analyseur Groq."""
@@ -42,51 +42,104 @@ class GroqAnalyzer:
         # Initialiser client Groq
         self.client = Groq(api_key=self.api_key)
         
-        # Statistiques
+        # Statistiques étendues
         self.stats = {
             'api_calls': 0,
             'tokens_used': 0,
-            'total_cost': 0.0,  # Groq est gratuit!
-            'avg_response_time': 0.0
+            'total_cost': 0.0,  # Groq gratuit
+            'avg_response_time': 0.0,
+            'successful_analyses': 0,
+            'failed_analyses': 0,
+            'start_time': None,
+            'end_time': None
         }
         
-        # Topics découverts (seront remplis par Phase 1)
+        # Topics découverts
         self.discovered_topics = []
         self.topic_descriptions = {}
         
-        print("✅ Groq Analyzer initialisé avec Llama-3.1!")
-        print(f"🆓 Limite quotidienne: 14,400 requêtes (largement suffisant)")
+        print("✅ Groq Complete Analyzer initialisé!")
+        print(f"🎯 Objectif: Analyser TOUS vos 317 avis")
+        print(f"🆓 Quota: 14,400/jour (largement suffisant!)")
     
-    def discover_topics_with_groq(self, reviews_sample: List[str]) -> Dict:
-        """Phase 1: Découverte automatique des topics via Groq."""
+    def discover_topics_enhanced(self, df_clean: pd.DataFrame, 
+                                text_column: str = 'texte_clean') -> Dict:
+        """Phase 1 améliorée: Discovery sur échantillon STRATIFIÉ."""
         
-        print(f"🔍 PHASE 1: Découverte de topics avec Groq sur {len(reviews_sample)} avis")
+        print(f"🔍 PHASE 1: Découverte topics STRATIFIÉE")
         
-        # Préparer échantillon pour prompt (limiter à ~20 avis pour taille prompt)
+        # Échantillon stratifié plus large et équilibré
+        discovery_samples = []
+        
+        print(f"📊 Échantillonnage stratifié par note:")
+        for note in sorted(df_clean['note'].unique()):
+            note_reviews = df_clean[df_clean['note'] == note][text_column].tolist()
+            
+            # Prendre plus d'échantillons pour meilleure représentativité
+            if note in [1, 2]:  # Notes négatives
+                sample_size = min(15, len(note_reviews))  # Max 15 par note négative
+            elif note == 3:      # Note neutre
+                sample_size = min(10, len(note_reviews))  # 10 pour neutre
+            else:                # Notes positives (4-5)
+                sample_size = min(20, len(note_reviews))  # Plus pour positives
+            
+            selected = note_reviews[:sample_size]
+            discovery_samples.extend(selected)
+            print(f"   {note}⭐: {len(selected)} avis sélectionnés")
+        
+        print(f"📈 Total échantillon discovery: {len(discovery_samples)} avis")
+        
+        # Grouper en chunks pour éviter prompts trop longs
+        chunk_size = 25  # 25 avis par chunk
+        all_topics = []
+        
+        for i in range(0, len(discovery_samples), chunk_size):
+            chunk = discovery_samples[i:i+chunk_size]
+            chunk_topics = self._discover_topics_chunk(chunk, chunk_num=i//chunk_size + 1)
+            
+            if chunk_topics:
+                all_topics.extend(chunk_topics.get('discovered_topics', []))
+        
+        # Consolidation des topics découverts
+        topic_counter = Counter(all_topics)
+        final_topics = [topic for topic, count in topic_counter.most_common(12)]  # Top 12 topics
+        
+        # Générer descriptions consolidées
+        consolidated_result = self._consolidate_discovered_topics(final_topics)
+        
+        self.discovered_topics = consolidated_result['discovered_topics']
+        self.topic_descriptions = consolidated_result['topic_descriptions']
+        
+        print(f"🎯 {len(self.discovered_topics)} topics finaux consolidés:")
+        for i, topic in enumerate(self.discovered_topics, 1):
+            desc = self.topic_descriptions.get(topic, 'Pas de description')
+            print(f"   {i}. {topic}")
+            print(f"      📝 {desc}")
+        
+        return consolidated_result
+    
+    def _discover_topics_chunk(self, chunk_reviews: List[str], chunk_num: int) -> Dict:
+        """Découvre topics sur un chunk d'avis."""
+        
+        print(f"   🔍 Analyse chunk {chunk_num} ({len(chunk_reviews)} avis)...", end=' ')
+        
         sample_text = "\n".join([
-            f"Avis {i+1}: {review[:200]}" for i, review in enumerate(reviews_sample[:20])
+            f"Avis {i+1}: {review[:150]}" for i, review in enumerate(chunk_reviews)
         ])
         
-        prompt = f"""Tu es un expert en analyse de données clients. Analyse ces avis sur une montre connectée et identifie les THÈMES RÉCURRENTS mentionnés.
+        prompt = f"""Tu es expert en analyse de feedback clients. Identifie les THÈMES RÉCURRENTS dans ces avis sur une montre connectée.
 
-IMPORTANT: Base-toi UNIQUEMENT sur ce qui est réellement dit dans les avis. Ne présuppose rien.
+IMPORTANT: 
+- Base-toi UNIQUEMENT sur ce qui est mentionné
+- Identifie AUTANT les aspects positifs que négatifs
+- Sois précis et concret dans les thèmes
 
 AVIS CLIENTS:
 {sample_text}
 
-Concentre-toi sur:
-- Quels aspects du produit reviennent souvent?
-- Quels problèmes sont fréquemment mentionnés?
-- Quelles fonctionnalités sont discutées?
-- Quels points positifs ressortent?
-
-Réponds UNIQUEMENT avec ce JSON (pas de texte avant/après):
+Réponds UNIQUEMENT avec ce JSON:
 {{
     "discovered_topics": ["theme1", "theme2", "theme3", "theme4", "theme5"],
-    "topic_descriptions": {{
-        "theme1": "Description courte de ce thème",
-        "theme2": "Description courte de ce thème"
-    }},
     "confidence": 0.85
 }}
 
@@ -98,89 +151,195 @@ JSON:"""
             response = self.client.chat.completions.create(
                 model="llama-3.1-8b-instant",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.1,  # Peu de créativité pour consistance
-                max_tokens=800
+                temperature=0.1,
+                max_tokens=400
             )
             
             response_time = time.time() - start_time
             result_text = response.choices[0].message.content.strip()
             
-            # Mettre à jour stats
             self.stats['api_calls'] += 1
-            self.stats['avg_response_time'] = response_time
+            self.stats['avg_response_time'] = (
+                (self.stats['avg_response_time'] * (self.stats['api_calls'] - 1) + response_time) 
+                / self.stats['api_calls']
+            )
             
-            print(f"⚡ Réponse Groq reçue en {response_time:.2f}s")
-            
-            # Parser le JSON
+            # Parser JSON
             try:
                 result = json.loads(result_text)
-                
-                self.discovered_topics = result.get('discovered_topics', [])
-                self.topic_descriptions = result.get('topic_descriptions', {})
-                
-                print(f"🎯 {len(self.discovered_topics)} topics découverts par Groq!")
-                
+                print(f"✅ {len(result.get('discovered_topics', []))} topics")
                 return result
-                
             except json.JSONDecodeError:
-                print(f"⚠️ Réponse Groq non-JSON:")
-                print(f"'{result_text[:200]}...'")
-                # Fallback: extraction manuelle si possible
-                return self._extract_topics_fallback(result_text)
-        
+                print("⚠️ JSON error")
+                return {"discovered_topics": [], "confidence": 0.0}
+                
         except Exception as e:
-            print(f"❌ Erreur appel Groq: {e}")
-            return {"discovered_topics": [], "topic_descriptions": {}, "error": str(e)}
+            print(f"❌ {e}")
+            return {"discovered_topics": [], "confidence": 0.0}
     
-    def _extract_topics_fallback(self, text: str) -> Dict:
-        """Extraction manuelle si JSON parsing échoue."""
-        print("🔧 Tentative extraction manuelle...")
+    def _consolidate_discovered_topics(self, all_topics: List[str]) -> Dict:
+        """Consolide et décrit les topics découverts."""
         
-        # Recherche patterns basiques
-        topics = []
-        if "discovered_topics" in text:
-            # Extraire entre crochets
-            import re
-            topic_match = re.search(r'"discovered_topics":\s*\[(.*?)\]', text, re.DOTALL)
-            if topic_match:
-                topic_text = topic_match.group(1)
-                topics = re.findall(r'"([^"]+)"', topic_text)
+        print(f"🔄 Consolidation des topics...")
+        
+        # Descriptions génériques basées sur patterns fréquents
+        topic_descriptions = {}
+        
+        for topic in all_topics:
+            topic_lower = topic.lower()
+            
+            # Mapping intelligent des descriptions
+            if any(word in topic_lower for word in ['batterie', 'autonomie', 'charge']):
+                topic_descriptions[topic] = "Durée de vie de la batterie, temps de charge et autonomie"
+            elif any(word in topic_lower for word in ['bluetooth', 'connexion', 'connectiv']):
+                topic_descriptions[topic] = "Connectivité Bluetooth, appairage et stabilité de connexion"
+            elif any(word in topic_lower for word in ['app', 'application', 'logiciel']):
+                topic_descriptions[topic] = "Application mobile, interface utilisateur et synchronisation"
+            elif any(word in topic_lower for word in ['qualité', 'construction', 'matériau']):
+                topic_descriptions[topic] = "Qualité de construction, matériaux et finition"
+            elif any(word in topic_lower for word in ['design', 'esthétique', 'apparence']):
+                topic_descriptions[topic] = "Design, esthétique et apparence du produit"
+            elif any(word in topic_lower for word in ['prix', 'rapport', 'coût']):
+                topic_descriptions[topic] = "Prix, rapport qualité-prix et valeur perçue"
+            elif any(word in topic_lower for word in ['durabilité', 'robustesse', 'solidité']):
+                topic_descriptions[topic] = "Durabilité, robustesse et longévité du produit"
+            elif any(word in topic_lower for word in ['fonctionnalité', 'fonction', 'feature']):
+                topic_descriptions[topic] = "Fonctionnalités disponibles et utilité"
+            elif any(word in topic_lower for word in ['confort', 'ergonomie', 'port']):
+                topic_descriptions[topic] = "Confort de port et ergonomie"
+            elif any(word in topic_lower for word in ['précision', 'mesure', 'fiabilité']):
+                topic_descriptions[topic] = "Précision des mesures et fiabilité des données"
+            else:
+                topic_descriptions[topic] = f"Aspect important identifié: {topic}"
         
         return {
-            "discovered_topics": topics[:8],  # Max 8 topics
-            "topic_descriptions": {topic: f"Topic extrait: {topic}" for topic in topics[:8]},
-            "confidence": 0.5,
-            "extraction_method": "fallback"
+            'discovered_topics': all_topics,
+            'topic_descriptions': topic_descriptions,
+            'consolidation_method': 'frequency_based'
         }
     
-    def analyze_review_with_groq(self, review_text: str, discovered_topics: List[str]) -> Dict:
-        """Phase 2: Analyse d'un avis avec les topics découverts."""
+    def analyze_complete_dataset(self, df_clean: pd.DataFrame,
+                               text_column: str = 'texte_clean',
+                               batch_size: int = 50) -> List[Dict]:
+        """Phase 2: Analyse COMPLÈTE de tous les avis avec batch processing."""
         
-        if not discovered_topics:
-            discovered_topics = ["general"]
+        print(f"\n🤖 PHASE 2: Analyse complète de TOUS les avis")
+        print(f"📊 Dataset: {len(df_clean)} avis à analyser")
+        print(f"📦 Batch size: {batch_size} avis par batch")
         
-        topics_str = ", ".join(discovered_topics)
+        if not self.discovered_topics:
+            raise ValueError("❌ Phase 1 (discovery) doit être exécutée d'abord!")
         
-        prompt = f"""Tu es un expert en analyse de sentiment. Analyse cet avis client sur une montre connectée.
+        self.stats['start_time'] = time.time()
+        all_results = []
+        
+        # Traitement par batches pour optimiser
+        total_batches = (len(df_clean) + batch_size - 1) // batch_size
+        
+        for batch_num in range(total_batches):
+            start_idx = batch_num * batch_size
+            end_idx = min(start_idx + batch_size, len(df_clean))
+            batch_df = df_clean.iloc[start_idx:end_idx]
+            
+            print(f"\n📦 BATCH {batch_num + 1}/{total_batches}")
+            print(f"   📄 Avis {start_idx + 1} à {end_idx}")
+            
+            # Analyser le batch
+            batch_results = self._analyze_batch(batch_df, text_column, batch_num + 1)
+            all_results.extend(batch_results)
+            
+            # Pause entre batches pour éviter rate limiting
+            if batch_num < total_batches - 1:  # Pas de pause après le dernier batch
+                print(f"   ⏸️ Pause 2s...")
+                time.sleep(2)
+            
+            # Stats intermédiaires
+            success_rate = (len(all_results) / end_idx) * 100
+            print(f"   📊 Succès: {len(all_results)}/{end_idx} ({success_rate:.1f}%)")
+        
+        self.stats['end_time'] = time.time()
+        self.stats['successful_analyses'] = len(all_results)
+        self.stats['failed_analyses'] = len(df_clean) - len(all_results)
+        
+        total_time = self.stats['end_time'] - self.stats['start_time']
+        print(f"\n✅ ANALYSE COMPLÈTE TERMINÉE!")
+        print(f"⏱️ Temps total: {total_time:.1f}s ({total_time/60:.1f} min)")
+        print(f"📊 Résultats: {len(all_results)}/{len(df_clean)} avis analysés")
+        print(f"🚀 Performance: {len(all_results)/total_time:.1f} avis/seconde")
+        
+        return all_results
+    
+    def _analyze_batch(self, batch_df: pd.DataFrame, 
+                      text_column: str, batch_num: int) -> List[Dict]:
+        """Analyse un batch d'avis."""
+        
+        batch_results = []
+        
+        for idx, row in batch_df.iterrows():
+            try:
+                review_text = str(row[text_column])
+                if len(review_text.strip()) < 10:  # Skip avis trop courts
+                    continue
+                
+                print(f"     🔄 Avis {len(batch_results) + 1}/{len(batch_df)}...", end=' ')
+                
+                # Analyse Groq de l'avis individuel
+                analysis_result = self._analyze_single_review_optimized(review_text)
+                
+                if analysis_result:
+                    # Combiner données originales + analyse Groq
+                    full_result = {
+                        'id': row.get('id', idx),
+                        'note_originale': row['note'],
+                        'auteur': row.get('auteur', 'Anonyme'),
+                        'date': row.get('date', ''),
+                        'avis_texte': review_text,
+                        'avis_length': len(review_text),
+                        **analysis_result  # Résultats Groq
+                    }
+                    
+                    batch_results.append(full_result)
+                    print(f"✅ {analysis_result.get('sentiment_global', 'OK')}")
+                    
+                    self.stats['successful_analyses'] += 1
+                else:
+                    print("❌ Échec")
+                    self.stats['failed_analyses'] += 1
+                
+                # Micro-pause pour éviter rate limiting
+                time.sleep(0.1)
+                
+            except Exception as e:
+                print(f"❌ Erreur: {str(e)[:50]}...")
+                self.stats['failed_analyses'] += 1
+                continue
+        
+        return batch_results
+    
+    def _analyze_single_review_optimized(self, review_text: str) -> Dict:
+        """Analyse optimisée d'un avis individuel."""
+        
+        topics_str = ", ".join(self.discovered_topics[:8])  # Limiter à 8 topics pour prompt
+        
+        prompt = f"""Analyse cet avis client sur une montre connectée.
 
-TOPICS IDENTIFIÉS COMME IMPORTANTS: {topics_str}
+ASPECTS IMPORTANTS IDENTIFIÉS: {topics_str}
 
-AVIS À ANALYSER: "{review_text}"
+AVIS: "{review_text[:500]}"
 
-Analyse le sentiment global ET le sentiment pour chaque topic mentionné.
+Analyse le sentiment global et identifie quels aspects sont mentionnés.
 
-Réponds UNIQUEMENT avec ce JSON (pas de texte avant/après):
+Réponds UNIQUEMENT avec ce JSON:
 {{
     "sentiment_global": "positif|neutre|négatif",
     "score_sentiment": 0.75,
     "confiance": 0.85,
-    "topics_mentionnés": ["topic1", "topic2"],
-    "sentiment_par_topic": {{
-        "topic1": "positif|neutre|négatif",
-        "topic2": "positif|neutre|négatif"
+    "aspects_mentionnés": ["aspect1", "aspect2"],
+    "sentiment_par_aspect": {{
+        "aspect1": "positif|neutre|négatif"
     }},
     "points_clés": ["Point principal 1", "Point principal 2"],
-    "recommandation": "Action recommandée pour l'entreprise"
+    "recommandation": "Action recommandée"
 }}
 
 JSON:"""
@@ -192,7 +351,7 @@ JSON:"""
                 model="llama-3.1-8b-instant",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
-                max_tokens=600
+                max_tokens=500
             )
             
             response_time = time.time() - start_time
@@ -209,240 +368,142 @@ JSON:"""
             try:
                 return json.loads(result_text)
             except json.JSONDecodeError:
-                print(f"⚠️ JSON parsing failed pour avis, réponse: '{result_text[:100]}...'")
+                # Fallback basique si parsing échoue
                 return {
                     "sentiment_global": "neutre",
                     "score_sentiment": 0.5,
                     "confiance": 0.3,
-                    "topics_mentionnés": [],
-                    "sentiment_par_topic": {},
-                    "points_clés": ["Erreur parsing JSON"],
-                    "recommandation": "Revoir le prompt Groq",
-                    "raw_response": result_text[:200]
+                    "aspects_mentionnés": [],
+                    "sentiment_par_aspect": {},
+                    "points_clés": ["Analyse partiellement échouée"],
+                    "recommandation": "Revoir le prompt",
+                    "parsing_error": True
                 }
-        
+                
         except Exception as e:
-            print(f"❌ Erreur analyse avis: {e}")
-            return {
-                "sentiment_global": "erreur",
-                "score_sentiment": 0.0,
-                "confiance": 0.0,
-                "topics_mentionnés": [],
-                "sentiment_par_topic": {},
-                "points_clés": [f"Erreur: {e}"],
-                "recommandation": "Vérifier connexion Groq",
-                "error": str(e)
-            }
+            return None
 
-def load_amazon_data():
-    """Charge vos données Amazon nettoyées."""
-    possible_paths = [
-        "V1.0/data/processed/avis_amazon_clean_complete.json",
-        "../data/processed/avis_amazon_clean_complete.json",
-        "avis_amazon_clean_complete.json"
-    ]
+def run_complete_analysis():
+    """Pipeline complet d'analyse sur TOUS les avis."""
     
-    for path in possible_paths:
-        if Path(path).exists():
-            print(f"📊 Chargement: {path}")
-            df = pd.read_json(path)
-            print(f"✅ {len(df)} avis chargés")
-            
-            # Distribution par note
-            note_dist = df['note'].value_counts().sort_index()
-            for note, count in note_dist.items():
-                print(f"   {note}⭐: {count} avis ({count/len(df)*100:.1f}%)")
-            
-            return df
-    
-    print("❌ Dataset non trouvé")
-    return None
-
-def run_complete_groq_analysis():
-    """Pipeline complet avec Groq."""
-    
-    print("🚀 ANALYSE COMPLÈTE AVEC GROQ LLM")
+    print("🚀 ANALYSE COMPLÈTE GROQ - TOUS LES AVIS")
     print("=" * 60)
+    print("🎯 Objectif: Analyser TOUS vos 317 avis avec Groq")
+    print("🆓 Coût: 0€ (Groq gratuit)")
+    print("⏱️ Durée estimée: 5-10 minutes")
+    print()
     
-    # Vérifier clé API
+    # Configuration clé API
     if not os.getenv('GROQ_API_KEY'):
         print("🔑 Configuration clé Groq:")
-        api_key = input("Entrez votre clé API Groq (ou ENTER si définie dans env): ").strip()
-        if api_key:
-            os.environ['GROQ_API_KEY'] = api_key
-        else:
-            print("❌ Clé API requise. Obtenez-la sur: https://console.groq.com/keys")
+        api_key = input("Entrez votre clé API Groq: ").strip()
+        if not api_key:
+            print("❌ Clé API requise")
             return
+        os.environ['GROQ_API_KEY'] = api_key
     
     # Charger données
-    df = load_amazon_data()
-    if df is None:
+    data_file = "V1.0/data/processed/avis_amazon_clean_complete.json"
+    if not Path(data_file).exists():
+        print(f"❌ Fichier non trouvé: {data_file}")
         return
     
-    # Préparer données
+    df = pd.read_json(data_file)
     text_col = 'texte_clean' if 'texte_clean' in df.columns else 'texte'
     df_clean = df[df[text_col].notna()]
     df_clean = df_clean[df_clean[text_col].str.len() > 10]
     
-    print(f"📝 {len(df_clean)} avis analysables")
+    print(f"📊 Dataset chargé: {len(df_clean)} avis analysables")
     
-    # Initialiser Groq
-    try:
-        analyzer = GroqAnalyzer()
-    except Exception as e:
-        print(f"❌ Erreur init Groq: {e}")
+    # Distribution par note
+    note_dist = df_clean['note'].value_counts().sort_index()
+    print(f"📈 Distribution:")
+    for note, count in note_dist.items():
+        print(f"   {note}⭐: {count} avis ({count/len(df_clean)*100:.1f}%)")
+    
+    # Confirmation utilisateur
+    print(f"\n⚠️ ATTENTION:")
+    print(f"   • Analyser {len(df_clean)} avis = ~{len(df_clean) + 20} appels API")
+    print(f"   • Temps estimé: {(len(df_clean) * 0.5)/60:.1f}-{(len(df_clean) * 1)/60:.1f} minutes")
+    
+    confirm = input("\n🚀 Lancer l'analyse complète ? (y/N): ").strip().lower()
+    if confirm != 'y':
+        print("❌ Analyse annulée")
         return
     
-    # PHASE 1: Découverte topics
-    print(f"\n🔍 PHASE 1: Découverte topics avec Groq")
-    
-    # Échantillon stratifié (10 avis par note)
-    discovery_sample = []
-    for note in sorted(df_clean['note'].unique()):
-        note_reviews = df_clean[df_clean['note'] == note][text_col].tolist()
-        discovery_sample.extend(note_reviews[:10])  # 10 par note max
-    
-    print(f"📊 Échantillon: {len(discovery_sample)} avis")
-    
-    # Découverte avec Groq
-    discovery_result = analyzer.discover_topics_with_groq(discovery_sample)
-    
-    if not discovery_result.get('discovered_topics'):
-        print("❌ Aucun topic découvert, arrêt")
-        return
-    
-    print(f"\n🎯 TOPICS DÉCOUVERTS PAR GROQ:")
-    for i, topic in enumerate(discovery_result['discovered_topics'], 1):
-        desc = discovery_result['topic_descriptions'].get(topic, 'Pas de description')
-        print(f"   {i}. {topic}")
-        print(f"      📝 {desc}")
-    
-    # PHASE 2: Analyse avec topics découverts
-    print(f"\n🤖 PHASE 2: Analyse avec Groq sur échantillon")
-    
-    # Analyser 30 avis pour commencer (économiser quota API)
-    sample_size = 30
-    print(f"📊 Analyse de {sample_size} avis (pour économiser quota API)...")
-    
-    analysis_results = []
-    df_sample = df_clean.head(sample_size)
-    
-    for idx, row in df_sample.iterrows():
-        print(f"   🔄 Analyse avis {len(analysis_results)+1}/{sample_size}...", end=' ')
-        
-        try:
-            review_text = str(row[text_col])
-            result = analyzer.analyze_review_with_groq(
-                review_text, 
-                discovery_result['discovered_topics']
-            )
-            
-            # Combiner données originales + analyse
-            full_result = {
-                'id': row.get('id', idx),
-                'note_originale': row['note'],
-                'auteur': row.get('auteur', 'Anonyme'),
-                'avis_texte': review_text[:150] + "..." if len(review_text) > 150 else review_text,
-                **result  # Ajouter tous les résultats Groq
-            }
-            
-            analysis_results.append(full_result)
-            print(f"✅ {result.get('sentiment_global', 'N/A')}")
-            
-            # Pause courte pour éviter rate limiting
-            time.sleep(0.2)
-            
-        except Exception as e:
-            print(f"❌ Erreur: {e}")
-            continue
-    
-    print(f"\n📊 ANALYSE TERMINÉE: {len(analysis_results)} avis analysés")
-    print(f"⚡ Stats Groq: {analyzer.stats['api_calls']} appels API, "
-          f"{analyzer.stats['avg_response_time']:.2f}s moyenne")
-    
-    # RÉSULTATS ET INSIGHTS
-    print(f"\n📈 RÉSULTATS GROQ:")
-    
-    # Distribution sentiment
-    sentiments = [r.get('sentiment_global', 'inconnu') for r in analysis_results]
-    sentiment_counts = Counter(sentiments)
-    
-    print(f"\n😊 SENTIMENTS DÉTECTÉS PAR GROQ:")
-    for sentiment, count in sentiment_counts.items():
-        pct = (count / len(analysis_results)) * 100
-        emoji = "😊" if sentiment == "positif" else "😐" if sentiment == "neutre" else "😞"
-        print(f"   {emoji} {sentiment.upper()}: {count} avis ({pct:.1f}%)")
-    
-    # Topics les plus mentionnés
-    all_topics_mentioned = []
-    for result in analysis_results:
-        topics = result.get('topics_mentionnés', [])
-        all_topics_mentioned.extend(topics)
-    
-    topic_mentions = Counter(all_topics_mentioned)
-    
-    if topic_mentions:
-        print(f"\n🔥 TOPICS LES PLUS DISCUTÉS (selon Groq):")
-        for topic, count in topic_mentions.most_common(8):
-            pct = (count / len(analysis_results)) * 100
-            print(f"   📌 {topic}: {count} mentions ({pct:.1f}%)")
-    
-    # Recommandations Groq
-    all_recommendations = [r.get('recommandation', '') for r in analysis_results if r.get('recommandation')]
-    
-    print(f"\n💡 RECOMMANDATIONS GROQ (échantillon):")
-    unique_recommendations = list(set(all_recommendations))[:5]
-    for i, rec in enumerate(unique_recommendations, 1):
-        if rec and len(rec) > 10:
-            print(f"   {i}. {rec}")
-    
-    # Cohérence avec notes étoiles
-    print(f"\n⭐ COHÉRENCE GROQ vs NOTES ÉTOILES:")
-    coherence_check = {}
-    
-    for result in analysis_results:
-        note = result.get('note_originale')
-        sentiment = result.get('sentiment_global')
-        
-        if note not in coherence_check:
-            coherence_check[note] = []
-        coherence_check[note].append(sentiment)
-    
-    for note in sorted(coherence_check.keys()):
-        sentiments_for_note = coherence_check[note]
-        sentiment_dist = Counter(sentiments_for_note)
-        print(f"   {note}⭐ ({len(sentiments_for_note)} avis): {dict(sentiment_dist)}")
-    
-    # Exemples d'analyses
-    print(f"\n📝 EXEMPLES D'ANALYSES GROQ:")
-    for i, result in enumerate(analysis_results[:3], 1):
-        print(f"\n   Exemple {i}:")
-        print(f"   📄 Avis: \"{result.get('avis_texte', '')}\"")
-        print(f"   ⭐ Note: {result.get('note_originale')}⭐")
-        print(f"   🎯 Groq Sentiment: {result.get('sentiment_global')} ({result.get('score_sentiment', 0):.2f})")
-        print(f"   📌 Topics: {result.get('topics_mentionnés', [])}")
-        print(f"   💡 Recommandation: {result.get('recommandation', 'N/A')}")
-    
-    # Sauvegarder résultats
-    output_file = "V1.0/data/processed/groq_analysis_results.json"
     try:
+        # Initialiser analyseur
+        analyzer = CompleteGroqAnalyzer()
+        
+        # PHASE 1: Discovery améliorée
+        print(f"\n🔍 PHASE 1: DISCOVERY STRATIFIÉE")
+        discovery_result = analyzer.discover_topics_enhanced(df_clean, text_col)
+        
+        # PHASE 2: Analyse complète
+        print(f"\n🤖 PHASE 2: ANALYSE COMPLÈTE")
+        all_results = analyzer.analyze_complete_dataset(df_clean, text_col, batch_size=25)
+        
+        # PHASE 3: Agrégation et sauvegarde
+        print(f"\n📊 PHASE 3: AGRÉGATION RÉSULTATS")
+        
+        # Stats finales
+        total_time = analyzer.stats['end_time'] - analyzer.stats['start_time']
+        print(f"📈 STATISTIQUES FINALES:")
+        print(f"   📞 Appels API: {analyzer.stats['api_calls']}")
+        print(f"   ⏱️ Temps total: {total_time:.1f}s")
+        print(f"   🎯 Succès: {len(all_results)}/{len(df_clean)} ({len(all_results)/len(df_clean)*100:.1f}%)")
+        print(f"   🚀 Performance: {analyzer.stats['avg_response_time']:.2f}s/avis moyenne")
+        
+        # Sauvegarde résultats complets
+        output_file = "V1.0/data/processed/groq_complete_analysis_results.json"
+        complete_results = {
+            'metadata': {
+                'analysis_date': '2025-01-09',
+                'total_reviews_analyzed': len(all_results),
+                'total_reviews_in_dataset': len(df_clean),
+                'success_rate': len(all_results) / len(df_clean),
+                'analysis_duration_seconds': total_time,
+                'api_calls_used': analyzer.stats['api_calls']
+            },
+            'discovery_phase': discovery_result,
+            'analysis_results': all_results,
+            'performance_stats': analyzer.stats
+        }
+        
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                'discovery_phase': discovery_result,
-                'analysis_results': analysis_results,
-                'summary': {
-                    'total_analyzed': len(analysis_results),
-                    'sentiment_distribution': dict(sentiment_counts),
-                    'topic_mentions': dict(topic_mentions.most_common(10)),
-                    'groq_stats': analyzer.stats
-                }
-            }, f, indent=2, ensure_ascii=False)
+            json.dump(complete_results, f, indent=2, ensure_ascii=False)
+        
         print(f"\n💾 Résultats sauvés: {output_file}")
+        
+        # Aperçu résultats
+        print(f"\n📊 APERÇU RÉSULTATS:")
+        sentiments = [r.get('sentiment_global', 'inconnu') for r in all_results]
+        sentiment_dist = Counter(sentiments)
+        
+        for sentiment, count in sentiment_dist.items():
+            pct = (count / len(all_results)) * 100
+            emoji = "😊" if sentiment == "positif" else "😐" if sentiment == "neutre" else "😞"
+            print(f"   {emoji} {sentiment.upper()}: {count} avis ({pct:.1f}%)")
+        
+        # Aspects les plus mentionnés
+        all_aspects = []
+        for r in all_results:
+            aspects = r.get('aspects_mentionnés', [])
+            all_aspects.extend(aspects)
+        
+        if all_aspects:
+            aspect_counts = Counter(all_aspects)
+            print(f"\n🔥 TOP ASPECTS MENTIONNÉS:")
+            for aspect, count in aspect_counts.most_common(8):
+                pct = (count / len(all_results)) * 100
+                print(f"   📌 {aspect}: {count} mentions ({pct:.1f}%)")
+        
+        print(f"\n🎉 ANALYSE COMPLÈTE TERMINÉE AVEC SUCCÈS!")
+        print(f"🔥 Vous disposez maintenant d'une analyse LLM de TOUS vos avis!")
+        
     except Exception as e:
-        print(f"⚠️ Erreur sauvegarde: {e}")
-    
-    print(f"\n🎉 ANALYSE GROQ TERMINÉE!")
-    print(f"🔥 Vous avez maintenant une analyse LLM réelle de vos avis!")
+        print(f"\n❌ Erreur pendant l'analyse: {e}")
+        print("💡 Vérifiez votre clé API et connexion internet")
 
 if __name__ == "__main__":
-    run_complete_groq_analysis()
+    run_complete_analysis()
